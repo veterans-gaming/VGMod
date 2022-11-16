@@ -1,0 +1,35 @@
+//--------------------------------------------------------------------------
+// BUCKListElementSpacer
+// -------------------------------------------------------------------------------------------------
+
+template BUCKListElementVerticalSpacer
+[
+    Magnifiable : float = 0.0,
+    Pixel : float = 0.0
+] is BUCKListElementDescriptor
+(
+    ComponentDescriptor = BUCKContainerDescriptor
+    (
+        ComponentFrame = TUIFramePropertyRTTI
+        (
+            MagnifiableWidthHeight = [0.0, <Magnifiable>]
+            PixelWidthHeight = [0.0, <Pixel>]
+        )
+    )
+)
+
+template BUCKListElementHorizontalSpacer
+[
+    Magnifiable : float = 0.0,
+    Pixel : float = 0.0
+] is BUCKListElementDescriptor
+(
+    ComponentDescriptor = BUCKContainerDescriptor
+    (
+        ComponentFrame = TUIFramePropertyRTTI
+        (
+            MagnifiableWidthHeight = [<Magnifiable>, 0.0]
+            PixelWidthHeight = [<Pixel>, 0.0]
+        )
+    )
+)

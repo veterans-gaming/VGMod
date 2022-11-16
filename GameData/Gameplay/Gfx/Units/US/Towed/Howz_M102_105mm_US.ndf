@@ -1,0 +1,28 @@
+export ModelFile_Howz_M102_105mm_US is 'GameData:/Assets/3D/Units/US/Canon/Howz_M102_105mm/Howz_M102_105mm.Ase2NdfBin'
+
+Modele_Howz_M102_105mm_US is TResourceMultiMaterialMeshWithLod
+(
+    FileName     = ModelFile_Howz_M102_105mm_US
+    CivMask =  CivMask/Common
+)
+
+Modele_Howz_M102_105mm_US_MID is TResourceMultiMaterialMeshWithLod
+(
+    FileName     = 'GameData:/Assets/3D/Units/US/Canon/Howz_M102_105mm/Howz_M102_105mm.Ase2NdfBin'
+    CivMask =  CivMask/Common
+)
+
+Modele_Howz_M102_105mm_US_LOW is TResourceMultiMaterialMeshWithLod
+(
+    FileName     = 'GameData:/Assets/3D/Units/US/Canon/Howz_M102_105mm/Howz_M102_105mm.Ase2NdfBin'
+    CivMask =  CivMask/Common
+)
+//-------------------------------------------------------------------------------------
+
+Gfx_Modele_Howz_M102_105mm_US is StrategicPawnDepictionTemplate
+(
+    MeshSocle = MeshModele_Socle_USA
+    MeshTige = MeshModele_Tige_courte
+    MeshPawn = Modele_Howz_M102_105mm_US
+    Anchor = "vehicule"
+)

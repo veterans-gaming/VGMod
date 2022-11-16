@@ -1,0 +1,271 @@
+
+
+StrategicBattleOrderAllianceFilterRadioButtonManager is TBUCKRadioButtonManager()
+
+//-------------------------------------------------------------------------------------
+
+template BoutonAxisAllies
+[
+  ElementName : string,
+  TextToken : string = "SSC_HALLIE",
+  DefaultToggleValue : bool,
+]
+is BUCKButtonDescriptor
+(
+    ElementName = <ElementName> + 'Filter'
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [100.0, 40.0]
+    )
+
+    IsTogglable = true
+    CannotDeselect = true
+    DefaultToggleValue = <DefaultToggleValue>
+    RadioButtonManager = ~/StrategicBattleOrderAllianceFilterRadioButtonManager
+
+    HasBackground = true
+    BackgroundBlockColorToken = "SD2_Blanc184"
+
+    HasBorder = false
+    BorderThicknessToken = "1"
+    BorderLineColorToken = "LighterGray"
+
+    Components =
+    [
+        BUCKTextDescriptor
+        (
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                MagnifiableWidthHeight = [50.0, 0.0]
+                AlignementToFather = [0.5, 0.5]
+                AlignementToAnchor = [0.5, 0.5]
+            )
+
+            ParagraphStyle = TParagraphStyleRTTI
+            (
+                Alignment = UIText_Center
+                VerticalAlignment = UIText_VerticalCenter
+                InterLine = 0
+            )
+
+            TextStyle = "Default"
+            TextToken = <TextToken>
+
+            VerticalFitStyle = ~/FitStyle/FitToContent
+
+            TypefaceToken = "UIMainFont"
+            BigLineAction = ~/BigLineAction/CutByDots
+
+            TextDico = ~/LocalisationConstantes/dico_interface_ingame
+
+            TextColor = "Fulda2_Noir"
+            TextSize = "16"
+        ),
+    ]
+)
+
+//-------------------------------------------------------------------------------------
+
+StrategicBattleOrderAllianceFilterLine is BUCKListDescriptor
+(
+    ElementName = "StrategicBattleOrderAllianceFilterLine"
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [0.0, 50.0]
+    )
+
+    Axis = ~/ListAxis/Horizontal
+
+    Elements =
+    [
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BoutonAxisAllies
+            (
+                ElementName = 'Allies'
+                TextToken = 'SSC_HALLIE'
+                DefaultToggleValue = true
+            )
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = BoutonAxisAllies
+            (
+                ElementName = 'Axis'
+                TextToken = 'SSC_HAXIS'
+                DefaultToggleValue = false
+            )
+        ),
+    ]
+)
+
+//-------------------------------------------------------------------------------------
+
+
+//-------------------------------------------------------------------------------------
+
+StrategicBattleOrderContainer is BUCKContainerDescriptor
+(
+    ElementName = "StrategicBattleOrderContainer"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        RelativeWidthHeight = [1.0, 0.0]
+        MagnifiableWidthHeight = [0.0, 700.0]
+    )
+
+    HasBackground = true
+    BackgroundBlockColorToken = "MarronPanel_baseLight"
+
+    Components =
+    [
+        BUCKListDescriptor
+        (
+            ElementName = "StrategicBattleOrderCentralList"
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [0.0, 1.0]
+            )
+
+            Axis = ~/ListAxis/Horizontal
+
+            Elements =
+            [
+                BUCKListElementDescriptor
+                (
+                    ComponentDescriptor = BUCKContainerDescriptor
+                    (
+                        ElementName = "SubPanelContainer"
+
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            RelativeWidthHeight = [0.0, 1.0]
+                            MagnifiableWidthHeight = [550,0]
+                        )
+
+                        // Envoie le main component de UISpecificStrategicBattleOrderSubPanelViewDescriptor
+                    )
+                ),
+                BUCKListElementDescriptor
+                (
+
+                    ComponentDescriptor = BUCKSpecificScrollingContainerDescriptor
+                    (
+                        ElementName = "BattleOrderCombatGroupScrollingContainer"
+                        ComponentFrame = TUIFramePropertyRTTI
+                        (
+                            RelativeWidthHeight = [0.0, 1.0]
+                            MagnifiableWidthHeight = [890,0]
+                        )
+
+                        ExternalScrollbar = true
+                        HasHorizontalScrollbar = true
+
+                        HasBackground = true
+                        BackgroundBlockColorToken = "MarronPanel_base"
+
+                        Components =
+                        [
+                            BUCKContainerDescriptor
+                            (
+                                UniqueName = "BattleOrderCombatGroupContent"
+
+                                ComponentFrame = TUIFramePropertyRTTI ()
+
+                                FitStyle = ~/ContainerFitStyle/FitToContent
+                            )
+                        ]
+                    )
+                )
+            ]
+        )
+    ]
+)
+
+//-------------------------------------------------------------------------------------
+
+SpecificStrategicBattleOrderPanelMainComponentDescriptor is BUCKListDescriptor
+(
+    ElementName = "StrategicBattleOrderPanel"
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = [1450.0, 0.0]
+        AlignementToAnchor = [0.5, 0.5]
+        AlignementToFather = [0.5, 0.5]
+    )
+
+    Axis = ~/ListAxis/Vertical
+
+    HidePointerEvents = true
+
+    HasBackground = true
+    BackgroundBlockColorToken = "SD2_Gris80"
+    // Alexis
+    Elements =
+    [
+        // Onglets et titre
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = SteelmanMainTitle( TextToken  = 'SBO_TITL')
+        ),
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor =  StrategicBattleOrderAllianceFilterLine
+        ),
+        // Liste principale de l'OOB
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = ~/StrategicBattleOrderContainer
+        ),
+        //-------------------------------------------------------------------------------------
+        // bouton close
+        BUCKListElementDescriptor
+        (
+            ComponentDescriptor = PanelBottomButton
+            (
+                Bouton = BoutonScore
+                (
+                    MagnifiableWidthHeight = [160,40]
+                    ElementName = 'CloseButton'
+                    TextToken = "CPT_CLOSE"
+                    Mapping = TEugBMutablePBaseClass( Value = TUserInputMapping( KeyboardEventID = UserInputKeyboard/KEY_ESCAPE ) )
+                )
+            )
+        ),
+    ]
+)
+
+// ----------------------------------------------------------
+
+SelectPawnPositionEvent is TDescriptorPositionEvents
+(
+    MaxEventCount = 10
+    EventsDurationInSeconds = 30
+    TriggNextEventDurationCeilInSeconds = 2.0
+    CameraMoverTargetClient = $/Camera/CameraMoverTargetClient
+
+    World3D = $/M3D/Scene/DefaultWorld
+    SituationAwarenessNextEventCommandName = CommandName/SituationAwarenessNextEvent
+
+    EraseEventWhenVisited = true
+    EnablePlayFX = true
+
+    MinAltitudeInMeter = 800
+    MaxAltitudeInMeter = 1100
+)
+
+// ----------------------------------------------------------
+
+UISpecificStrategicBattleOrderPanelViewDescriptor is TUISpecificStrategicBattleOrderPanelViewDescriptor
+(
+    MainComponentDescriptor = ~/SpecificStrategicBattleOrderPanelMainComponentDescriptor
+    MainComponentContainerUniqueName = "StrategicMenuPanelContainer"
+
+    SubPanelDescriptor = ~/UISpecificStrategicBattleOrderSubPanelViewDescriptor
+    SelectPawnPositionEvent = ~/SelectPawnPositionEvent
+
+    SmartGroupsDisplayerDescriptor = UISpecificStrategicSmartGroupsDisplayerViewDescriptor
+    (
+        MainComponentContainerUniqueName = "BattleOrderCombatGroupContent"
+    )
+)

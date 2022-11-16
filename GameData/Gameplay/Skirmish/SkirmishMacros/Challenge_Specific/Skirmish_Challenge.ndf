@@ -1,0 +1,41 @@
+
+//-------------------------------------------------------------------------
+//------------------------------ Missions -----------------------------------
+//-------------------------------------------------------------------------
+
+// Missions
+//-------------------------------------------------------------------------
+export Challenge_Main_Attack_All is TMacroActionDescriptor_CorridorAttack_Specific
+(
+    ParametresDeMission =
+    ~/Default_Support_Request_Attack_Settings
+    +
+    ~/Blitzkrieg_Attack_Settings
+    +
+    ~/AvoidFillerCorridors_Attack_Settings
+    +
+    [
+        TGenerationSettingHolder(GenerationType = TGenerationType_FixedSize NumberLaunchBasedOnGenerationType = 1),
+        TCoordinationSettingHolder(CoordinationType = ESupportingStatus/NeedSupport),
+        TMacroActionProductionSettingHolder(ProdProperties = [TProdProperty_LaunchAsSoonAsPossible] PoolModelList = [~/Pool_Max_AllUnits_Skirmish] LaunchASAP_RatioMin = 0.01),
+        TAttackRatioSettingHolder(RatioMinimumPourAttaquer = 0.85 RatioPourAttaquerPerduAChaqueTick = 0.00084 CompterLesUnitesEnZoneExtendedDansLaMenace = true), // Perte de 0.1 de ratio toutes les 2 minutes
+        TCorridorPlacementSettingHolder(StayInCorridorIfp = true MargeDeRegroupementDepuisLaLigneDeFront = 1 ActiveComportementEnBoutDeCouloir = true),
+    ]
+)
+
+//-------------------------------------------------------------------------
+// Pool Models
+//-------------------------------------------------------------------------
+export Pool_Max_AllUnits_Skirmish is TPoolModel
+(
+    ModelList = [
+    TPoolElement(
+        DescriptorId = GUID:{8f5ecf62-2b23-4f68-9874-a38ab0e3fdbf}
+        Required = false
+        Nb = 99
+        TagsPriority = [
+            "AllUnits",
+        ]
+    ),
+    ]
+)

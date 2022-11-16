@@ -1,0 +1,28 @@
+export ModelFile_Unimog_trans_RFA is 'GameData:/Assets/3D/Units/RFA/Vehicule/Unimog_S_404/Unimog_S_404.Ase2NdfBin'
+
+Modele_Unimog_trans_RFA is TResourceMultiMaterialMeshWithLod
+(
+    FileName = ModelFile_Unimog_trans_RFA
+    CivMask =  CivMask/Common
+)
+
+Modele_Unimog_trans_RFA_MID is TResourceMultiMaterialMeshWithLod
+(
+    FileName = 'GameData:/Assets/3D/Units/RFA/Vehicule/Unimog_S_404/Unimog_S_404.Ase2NdfBin'
+    CivMask =  CivMask/Common
+)
+
+Modele_Unimog_trans_RFA_LOW is TResourceMultiMaterialMeshWithLod
+(
+    FileName = 'GameData:/Assets/3D/Units/RFA/Vehicule/Unimog_S_404/Unimog_S_404.Ase2NdfBin'
+    CivMask =  CivMask/Common
+)
+//-------------------------------------------------------------------------------------
+
+Gfx_Modele_Unimog_trans_RFA is StrategicPawnDepictionTemplate
+(
+    MeshSocle = MeshModele_Socle_RFA
+    MeshTige = MeshModele_Tige_courte
+    MeshPawn = Modele_Unimog_trans_RFA
+    Anchor = "vehicule"
+)

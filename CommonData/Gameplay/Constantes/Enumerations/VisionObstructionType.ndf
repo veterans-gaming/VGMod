@@ -1,0 +1,9 @@
+// Enum TVisionObstructionType
+EVisionObstructionType is TBaseClass
+(
+    Undefined is 0
+    Vehicle   is 1
+    Infantry  is 2
+    Air       is 3
+    Length    is 4
+)

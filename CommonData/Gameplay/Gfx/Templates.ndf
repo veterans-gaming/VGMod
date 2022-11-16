@@ -1,0 +1,82 @@
+public template TemplateGfxDescriptorBatimentWithLevelDesignPattern_OnlyLevelBuild
+[
+    SceneryDescriptorName,
+    LevelBuildDescriptor,
+] is TTimelyReceiverFactoryCarrier
+(
+    ModifyLB = TTimelyModifyLBReceiverFactory
+    (
+        SymbolName = <SceneryDescriptorName>
+        LevelBuildStateGeoDatabaseModification = TGfxLevelBuildStateGeoDatabaseModification
+        (
+            Undoable = true
+
+            LevelBuildStateGeoDatabaseProxy = $/M3D/Scene/LevelBuildStateGeoDatabaseProxy
+            LevelBuildSymbolDatabaseProxy = $/M3D/Scene/LevelBuildSymbolDatabaseProxy
+            Mode = SDMode_StateDB
+        )
+
+        LevelBuildModification = TGfxLevelBuildModification
+        (
+            Descriptor = <LevelBuildDescriptor>
+        )
+    )
+)
+
+//------------------------------------------------------------------------------
+//------------------------------------------------------------------------------
+
+public template TemplateGfxDescriptorGhostBatimentWithLevelDesignPattern_OnlyLevelBuild
+[
+    SceneryDescriptorName,
+    LevelBuildDescriptor,
+] is TTimelyReceiverFactoryCarrier
+(
+    ModifyLB = TTimelyModifyLBReceiverFactory
+    (
+        SymbolName = <SceneryDescriptorName>
+        LevelBuildModification = TGfxLevelBuildModification
+        (
+            Descriptor = <LevelBuildDescriptor>
+        )
+    )
+)
+//------------------------------------------------------------------------------
+// première implémentation statique
+template TResourceMultiMaterialMeshWithLod
+         [
+         FileName     = "",
+         CivMask      = 0,
+         ] is TResourceMultiMaterialMesh
+(
+    FileName = <FileName>
+    UsefulnessMask = <CivMask> + TypeMask/Common // Les TypeMask ne sont utilisés que pour les textures, pas pour les meshs.
+)
+//------------------------------------------------------------------------------
+template TemplateMeshDescriptor [ ModelFile ] is TResourceMultiMaterialMeshWithLod
+(
+    FileName = <ModelFile>
+    CivMask = CivMask/Common
+)
+
+public template TemplateTimelyDescriptorBatimentWithLevelDesignPattern_OnlyLevelBuild
+[
+    SceneryDescriptorName,
+    LevelBuildDescriptor,
+] is TTimelyModifyLBReceiverFactory
+(
+    SymbolName = <SceneryDescriptorName>
+    LevelBuildStateGeoDatabaseModification = TGfxLevelBuildStateGeoDatabaseModification
+    (
+        Undoable = true
+
+        LevelBuildStateGeoDatabaseProxy = $/M3D/Scene/LevelBuildStateGeoDatabaseProxy
+        LevelBuildSymbolDatabaseProxy = $/M3D/Scene/LevelBuildSymbolDatabaseProxy
+        Mode = SDMode_StateDB
+    )
+
+    LevelBuildModification = TGfxLevelBuildModification
+    (
+        Descriptor = <LevelBuildDescriptor>
+    )
+)

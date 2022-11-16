@@ -1,0 +1,325 @@
+private AirUnitTagsToCheck is [ 'Helo', 'Avion' ]
+
+private NoRecoAdvantage is TCombatAdvantageDefinition
+(
+    AdvantageValue = 1
+    // Alexis test à remplacer quand NoInfantryAdvantage fonctionnera
+    TextToken = 'CA_INF'
+    TagToCheck = ['Infanterie']
+    TagToCheckAgainst = ['Infanterie']
+    {TextToken = 'CA_Reco'
+        TagToCheck = [ 'Reco']
+        TagToCheckAgainst = [ 'Reco']}
+)
+
+private NoAAAdvantage is TCombatAdvantageDefinition
+(
+    AdvantageValue = 0
+    TextToken = 'CA_AA'
+    TagToCheck = ~/AirUnitTagsToCheck
+    TagToCheckAgainst = [ 'Canon_AA', 'Avion_Chasseur','Canon_AA_Standard' ]
+)
+
+private NoATAdvantage is TCombatAdvantageDefinition
+(
+    AdvantageValue = 1
+    TextToken = 'CA_AT'
+    TagToCheck = [ 'Char' ]
+    TagToCheckAgainst = [ 'Char', 'ChasseurDeChar','Avion_AT','Infanterie_Spec_Defense']
+)
+private NoInfantryAdvantage is TCombatAdvantageDefinition
+(
+    AdvantageValue = 2
+    TextToken = 'CA_INF'
+    TagToCheck = [ 'Infanterie' ]
+    TagToCheckAgainst = [ 'Infanterie']
+)
+
+StrategicAutoresolveConstantes is TStrategicAutoResolveConstantes
+(
+    PertesAttaquantSelonTerrain = MAP
+    [
+        (~/ETerrainType/Default, PerteAttaquantSurTerrainDefault),
+        {(~/ETerrainType/Urbain, PerteAttaquantSurTerrainDefault), //PerteAttaquantSurTerrainUrbain
+                //-------------------------------------------------------------------------------------
+                (~/ETerrainType/StrategicForest, PerteAttaquantSurTerrainDefault ), // PerteAttaquantSurTerrainForet
+                (~/ETerrainType/StrategicPlain, PerteAttaquantSurTerrainDefault), // PerteAttaquantSurTerrainPlaine
+                (~/ETerrainType/StrategicSemiUrban, PerteAttaquantSurTerrainDefault), //PerteAttaquantSurTerrainSemiUrbain}
+    ]
+
+    PertesDefenseurSelonTerrain = MAP
+    [
+        (~/ETerrainType/Default, PerteDefenseurSurTerrainDefault),
+    ]
+
+    Avantages = MAP
+    [
+        ( ~/EAutoresolveAvantage_NoRecoVersusReco,     ~/NoRecoAdvantage ),
+        ( ~/EAutoresolveAvantage_NoAntiAirVersusAir,   ~/NoAAAdvantage ),
+        ( ~/EAutoresolveAvantage_NoAntiTankVersusTank, ~/NoATAdvantage ),
+    ]
+    CombatAntiAirAdvantageType = ~/EAutoresolveAvantage_NoAntiAirVersusAir
+
+    AirUnitTags = ~/AirUnitTagsToCheck
+
+    VictoryTypeByBalanceOfPower =
+    [
+        ( -2,    EVictoryType/TotalDefeat),
+        ( -1,    EVictoryType/MajorDefeat),
+        ( -0.5,    EVictoryType/MinorDefeat),
+        ( 0,    EVictoryType/Draw),
+
+        ( 1,    EVictoryType/Draw),
+        ( 2,    EVictoryType/MinorVictory),
+        ( 3,     EVictoryType/MajorVictory),
+        ( 4,    EVictoryType/TotalVictory),
+    ]
+
+    // -------------
+    // Combat Aerien
+    // -------------
+
+    PertePourAttaquantSelonDecalageCombatAerien = PertePourAttaquantSelonDecalageForCombatAerien
+    PertePourDefenseurSelonDecalageCombatAerien = PertePourDefenseurSelonDecalageForCombatAerien
+
+    VictoryTypeByBalanceOfPowerCombatAerien =
+    [
+        ( -4,    EVictoryType/TotalDefeat),
+        ( -3,    EVictoryType/MajorDefeat),
+        ( -2,    EVictoryType/MinorDefeat),
+        ( -1,    EVictoryType/Draw),
+
+        ( 1,    EVictoryType/Draw),
+        ( 2,    EVictoryType/MinorVictory),
+        ( 3,     EVictoryType/MajorVictory),
+        ( 4,    EVictoryType/TotalVictory),
+    ]
+
+
+    // -------------
+    // Combat Sol Air \ combat Attaquant Defenseur : cas où l'avion est en supériorité sur une zonee t qu'une DCA devient active (cas rare)
+    // -------------
+
+    PertePourAttaquantSelonDecalageCombatSolAir = PertePourAttaquantSelonDecalageForCombatSolAir
+    PertePourDefenseurSelonDecalageCombatSolAir = PertePourDefenseurSelonDecalageForCombatSolAir
+
+    VictoryTypeByBalanceOfPowerCombatSolAir =
+    [
+        ( 0,    EVictoryType/Draw),
+        ( 4,    EVictoryType/MinorVictory),
+        ( 6,    EVictoryType/MajorVictory),
+    ]
+
+
+    //-------------------------------------------------------------------------------------
+    // Combat Air Sol // combat attaquant defenseur : cas où l'avion entre dans le cercle d'une DCA / l'avion est attaquant et DCA
+    //-------------------------------------------------------------------------------------
+
+    PertePourAttaquantSelonDecalageCombatAirSol = PertePourAttaquantSelonDecalageForCombatAirSol
+    PertePourDefenseurSelonDecalageCombatAirSol = PertePourDefenseurSelonDecalageForCombatAirSol
+
+    VictoryTypeByBalanceOfPowerCombatAirSol =
+    [
+        ( -6,    EVictoryType/MajorDefeat),
+        ( -4,    EVictoryType/MinorDefeat),
+        ( 0,    EVictoryType/Draw),
+        ( 4,    EVictoryType/MinorVictory),
+        ( 6,    EVictoryType/MajorVictory),
+    ]
+)
+
+// Pertes.
+// négatif = défavorable à  la défense et attaque ;  positif = favorable à  l'attaque et défense.
+// en cas de victoire de l'ATQ avec un ratio de 3.5 par exemple,
+// on appliquera une perte en ATQ correspondante au lerp entre les ratios 3 et 4
+// on appliquera une perte en DEF correspondante au lerp entre les ratios -3 et -4
+
+// ATTENTION: les colonnes sont affiché dynamiquement dans UISpecificStrategicAutoResolveViewDescriptor/PertesSurTerrainBlade
+// il n'est pas nécessaire que les colonnes soit consécutive
+
+PerteAttaquantSurTerrainDefault is
+[
+
+    (-2    ,  1),
+    (-1    ,  0.8),
+    (-0.5  ,  0.60),
+    (-0.25  ,  0.45),
+    (-0.10  ,  0.35),
+
+    (0  ,  0.30), //minor defeat
+
+    (0.10  ,    0.25),
+    (0.25  ,    0.20),
+    (0.5  ,    0.15),
+    (1  ,    0.1),
+    (2    ,   0.00),
+
+]
+PerteDefenseurSurTerrainDefault is
+[
+
+    (-2    ,  1),
+    (-1    ,  0.8),
+    (-0.5  ,  0.60),
+    (-0.25  ,  0.45),
+    (-0.10  ,  0.35),
+
+    (0  ,  0.30), //minor defeat
+
+    (0.10  ,    0.25),
+    (0.25  ,    0.20),
+    (0.5  ,    0.15),
+    (1  ,    0.1),
+    (2    ,   0.00),
+
+
+]
+//-------------------------------------------------------------------------------------
+// foret
+PerteAttaquantSurTerrainForet is
+[
+
+   (-2    ,  1),
+    (-1    ,  0.8),
+    (-0.5  ,  0.60),
+    (-0.25  ,  0.45),
+    (-0.10  ,  0.35),
+
+    (0  ,  0.30), //minor defeat
+
+    (0.10  ,    0.25),
+    (0.25  ,    0.20),
+    (0.5  ,    0.15),
+    (1  ,    0.1),
+    (2    ,   0.00),
+
+]
+
+// plaine
+PerteAttaquantSurTerrainPlaine is
+[
+
+    (-2    ,  1),
+    (-1    ,  0.8),
+    (-0.5  ,  0.60),
+    (-0.25  ,  0.45),
+    (-0.10  ,  0.35),
+
+    (0  ,  0.30), //minor defeat
+
+    (0.10  ,    0.25),
+    (0.25  ,    0.20),
+    (0.5  ,    0.15),
+    (1  ,    0.1),
+    (2    ,   0.00),
+
+]
+
+// plaine
+PerteAttaquantSurTerrainSemiUrbain is
+[
+
+    (-2    ,  1),
+    (-1    ,  0.8),
+    (-0.5  ,  0.60),
+    (-0.25  ,  0.45),
+    (-0.10  ,  0.35),
+
+    (0  ,  0.30), //minor defeat
+
+    (0.10  ,    0.25),
+    (0.25  ,    0.20),
+    (0.5  ,    0.15),
+    (1  ,    0.1),
+    (2    ,   0.00),
+
+]
+//-------------------------------------------------------------------------------------
+PerteAttaquantSurTerrainUrbain is
+[
+    (-2    ,  1),
+    (-1    ,  0.8),
+    (-0.5  ,  0.60),
+    (-0.25  ,  0.45),
+    (-0.10  ,  0.35),
+
+    (0  ,  0.30), //minor defeat
+
+    (0.10  ,    0.25),
+    (0.25  ,    0.20),
+    (0.5  ,    0.15),
+    (1  ,    0.1),
+    (2    ,   0.00),
+]
+PerteDefenseurSurTerrainUrbain is
+[
+   (-2    ,  1),
+    (-1    ,  0.8),
+    (-0.5  ,  0.60),
+    (-0.25  ,  0.45),
+    (-0.10  ,  0.35),
+
+    (0  ,  0.30), //minor defeat
+
+    (0.10  ,    0.25),
+    (0.25  ,    0.20),
+    (0.5  ,    0.15),
+    (1  ,    0.1),
+    (2    ,   0.00),
+]
+
+//-------------------------------------------------------------------------------------/
+PertePourAttaquantSelonDecalageForCombatAerien is
+[
+
+       (-4,    0.40),
+       (-3,    0.30),
+       (-2,    0.20),
+       (-1,    0.15),
+       (0,     0.10),
+       (1,     0.01),
+
+]
+
+PertePourDefenseurSelonDecalageForCombatAerien is
+[
+        (-1,    0.01),
+        (0,     0.10),
+        (1,     0.15),
+        (2,     0.20),
+        (3,     0.30),
+        (4,     0.40),
+]
+// pertes des avions dans les combats les opposant à la dca.
+PertePourDefenseurSelonDecalageForCombatSolAir is
+[
+
+       (0, 0),
+       (1,     0.10),
+       (2,     0.15),
+       (3,     0.20),
+       (4,     0.30),
+       (5,     0.40),
+]
+PertePourAttaquantSelonDecalageForCombatAirSol is
+[
+
+    (-5,     0.40),
+    (-4,     0.30),
+    (-3,     0.20),
+    (-2,     0.15),
+    (-1,     0.10),
+    (0,      0.05),
+]
+
+// l'avion est le défenseur dans un combat sol air
+PertePourAttaquantSelonDecalageForCombatSolAir is
+[
+    (0,     0.06),
+]
+
+PertePourDefenseurSelonDecalageForCombatAirSol is
+[
+
+    (0,     0.06),
+]

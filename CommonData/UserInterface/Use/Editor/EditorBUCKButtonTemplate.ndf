@@ -1,0 +1,92 @@
+
+private EditorDefaultButtonHeight is 38.0
+private EditorDefaultButtonDims is [ 168.0, EditorDefaultButtonHeight ]
+
+template EditorGenericButton
+[
+    UniqueName : string = '',
+    ElementName : string = '',
+    ButtonWidthHeight : float2 = EditorDefaultButtonDims,
+    ButtonRelativeWidthHeight : float2 = [0.0, 0.0],
+    ButtonMagnifiableOffset : float2 = [0.0, 0.0],
+    ButtonRelativeOffset : float2 = [0.0, 0.0],
+    ButtonAlignementToFather : float2 = [0.0, 0.0],
+    ButtonAlignementToAnchor : float2 = [0.0, 0.0],
+    TextToken : string = '',
+    TextElementName : string = 'TextElement',
+    TextDico : string = ~/LocalisationConstantes/dico_ui_editor,
+    Grayed : bool = false,
+    ParagraphStyle : TParagraphStyleRTTI = ~/paragraphStyleTextCenter,
+    RelativeTextPositionX : float = 0.5,
+    RelativeTextPositionY : float = 0.5,
+    RelativeTextWidth : float = 1,
+    MagnifiableTextWidth : float = 0,
+    PixelTextWidth : float = 0,
+
+    IsFocusable : bool = false,
+    FocusMapping : TEugBMutablePBaseClass = nil,
+
+    Mapping : TEugBMutablePBaseClass = nil,
+
+    Components : LIST<TBUCKContainerDescriptor> = [],
+
+    SpotlightComponent : TBUCKContainerDescriptor = nil,
+]
+is BUCKButtonDescriptor
+(
+    ElementName = <ElementName>
+    UniqueName = <UniqueName>
+
+    ComponentFrame = TUIFramePropertyRTTI
+    (
+        MagnifiableWidthHeight = <ButtonWidthHeight>
+        RelativeWidthHeight = <ButtonRelativeWidthHeight>
+        MagnifiableOffset = <ButtonMagnifiableOffset>
+        RelativeOffset = <ButtonRelativeOffset>
+        AlignementToFather = <ButtonAlignementToFather>
+        AlignementToAnchor = <ButtonAlignementToAnchor>
+    )
+
+    Components =
+    [
+        BUCKTextDescriptor
+        (
+            ElementName = <ElementName> + <TextElementName>
+
+            ComponentFrame = TUIFramePropertyRTTI
+            (
+                RelativeWidthHeight = [<RelativeTextWidth>, 1.0]
+                MagnifiableWidthHeight = [<MagnifiableTextWidth>, 0.0]
+                PixelWidthHeight = [<PixelTextWidth>, 0.0]
+                AlignementToFather = [<RelativeTextPositionX>, <RelativeTextPositionY>]
+                AlignementToAnchor = [<RelativeTextPositionX>, <RelativeTextPositionY>]
+            )
+
+            ParagraphStyle = <ParagraphStyle>
+            TextStyle = "Default"
+            TypefaceToken = "UIMainFont"
+
+            TextToken = <TextToken>
+            TextDico = <TextDico>
+
+            TextColor = "Editor/Button/Standard"
+            TextSize = "Editor/Button/Standard"
+        ),
+    ] + <Components>
+
+    Grayed = <Grayed>
+
+    Mapping = <Mapping>
+
+    IsFocusable = <IsFocusable>
+    FocusMapping = <FocusMapping>
+
+    SpotlightComponent = <SpotlightComponent>
+
+    HasBorder = true
+    BorderThicknessToken = "Editor/Button/Border"
+    BorderLineColorToken = "Editor/Button/Border"
+
+    HasBackground = true
+    BackgroundBlockColorToken = "Editor/Button/Background"
+)

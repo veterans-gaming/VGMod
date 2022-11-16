@@ -1,0 +1,41 @@
+// Utiliser ce template pour les pions des unités stratégiques dans Steelman
+template StrategicPawnDepictionTemplate
+[
+    MeshSocle,
+    MeshTige,
+    MeshPawn,
+    Anchor : string
+]
+is TTimelyReceiverFactoryCarrier
+(
+
+    DepictionTemplate = TDepictionTemplate
+    (
+        Scaler = TConstantScaler( Scale = 7)
+        Selector = OnlyHighDepictionSelector
+        DepictionAlternatives = [ DepictionDescriptor_LOD_High( MeshDescriptor = <MeshSocle> ) ]
+
+        SubDepictions = [ TSubDepiction
+        (
+            Selectable = True
+            Depiction = TDepictionTemplate
+            (
+                Scaler = CommonIdentityScaler
+                Selector = OnlyHighDepictionSelector
+                DepictionAlternatives = [ DepictionDescriptor_LOD_High( MeshDescriptor = <MeshTige> ) ]
+
+                SubDepictions = [ TSubDepiction
+                (
+                    Selectable = True
+                    Anchor = <Anchor>
+                    Depiction = TDepictionTemplate
+                    (
+                        Scaler = TConstantScaler( Scale = 7)
+                        Selector = OnlyHighDepictionSelector
+                        DepictionAlternatives = [ DepictionDescriptor_LOD_High( MeshDescriptor = <MeshPawn> ) ]
+                    )
+                ) ]
+            )
+        ) ]
+    )
+)

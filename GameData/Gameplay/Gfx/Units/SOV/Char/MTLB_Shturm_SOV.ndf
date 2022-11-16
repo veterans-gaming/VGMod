@@ -1,0 +1,28 @@
+export ModelFile_MTLB_Shturm_SOV is 'GameData:/Assets/3D/Units/URSS/Antichar/MTLB_Shturm/MTLB_Shturm.Ase2NdfBin'
+
+Modele_MTLB_Shturm_SOV is TResourceMultiMaterialMeshWithLod
+(
+    FileName     = ModelFile_MTLB_Shturm_SOV
+    CivMask =  CivMask/Common
+)
+
+Modele_MTLB_Shturm_SOV_MID is TResourceMultiMaterialMeshWithLod
+(
+    FileName     = 'GameData:/Assets/3D/Units/URSS/Antichar/MTLB_Shturm/MTLB_Shturm.Ase2NdfBin'
+    CivMask =  CivMask/Common
+)
+
+Modele_MTLB_Shturm_SOV_LOW is TResourceMultiMaterialMeshWithLod
+(
+    FileName     = 'GameData:/Assets/3D/Units/URSS/Antichar/MTLB_Shturm/MTLB_Shturm.Ase2NdfBin'
+    CivMask =  CivMask/Common
+)
+//-------------------------------------------------------------------------------------
+
+Gfx_Modele_MTLB_Shturm_SOV is StrategicPawnDepictionTemplate
+(
+    MeshSocle = MeshModele_Socle_SOV
+    MeshTige = MeshModele_Tige_courte
+    MeshPawn = Modele_MTLB_Shturm_SOV
+    Anchor = "vehicule"
+)

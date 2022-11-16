@@ -1,0 +1,69 @@
+private BuildingDamageRatioOperator is TCosmeticDamageOperatorDesc
+(
+    OperatorId = 'DamageRatio'
+)
+
+template template_UnitLevelBuildViewDescriptor
+[
+    RangeHigh = $/GraphicOption/LevelBuild_High,
+    RangeMid = $/GraphicOption/LevelBuild_Mid,
+    RangeLow = $/GraphicOption/LevelBuild_Low,
+
+    AdditionalMode = SDMode_Sticker + SDMode_StickerDynamic,
+
+    ModeLow  = SDMode_Low,
+    ModeMid  = SDMode_Mid,
+    ModeHigh = SDMode_High,
+
+    MaxRange = $/GraphicOption/LevelBuild_Low,
+
+    UseAutoBatcher : bool,
+
+    StickersHandler = nil
+] is TUnitLevelBuildViewDescriptor
+(
+    ModeLowComplete  is <ModeLow> + <AdditionalMode>
+    ModeMidComplete  is <ModeMid> + <AdditionalMode>
+    ModeHighComplete is <ModeHigh> + <AdditionalMode>
+
+    SymbolDatabaseProxy = $/M3D/Scene/LevelBuildSymbolDatabaseProxy
+    StateDatabaseProxy  = $/M3D/Scene/LevelBuildStateGeoDatabaseProxy
+    Camera              = $/M3D/Camera/CameraPrincipale
+    World               = $/M3D/Scene/DefaultWorld
+    WorldFloorProxy     = $/M3D/Scene/WorldFloorForOnlyGround
+
+    MaskDestroyed = SDMask_Destroy
+    Modes = [ModeHighComplete, ModeMidComplete, ModeLowComplete]
+    KeepGeometryMask = 4  // on garde que le LOW en mémoire.
+    Ranges = [0.1, 0.05, 0.003] // attention quand on fait disparaitre avant que le baking est pris le relai
+    MinRange = $/GraphicOption/LevelBuild_Low
+    MaxRange = <MaxRange>
+    LodMultiplier = $/GraphicOption/LodRangeMultiplier
+    UseAutoBatcher = <UseAutoBatcher>
+    JobPriority = 500
+    ImposteurSystemProxy = $/M3D/Shader/ImposteurSystemProxy
+    StickersHandler = <StickersHandler>
+    Operators = [ ~/BuildingDamageRatioOperator, DepictionOperator_Shader_TeamColor, TCosmeticOccupiedOperatorDesc(), DepictionOperator_Shader_Selection ]
+)
+
+export DefaultUnitLevelBuildViewDescriptor is template_UnitLevelBuildViewDescriptor
+(
+    AdditionalMode = SDMode_Sticker + SDMode_StickerDynamic
+    StickersHandler = $/GFX/StickerProxy/DynamicStickersHandlerProxy
+    UseAutoBatcher = false
+)
+
+export DefenseUnitLevelBuildViewDescriptor is template_UnitLevelBuildViewDescriptor
+(
+    MaxRange = $/GraphicOption/LevelBuild_Infinite
+    StickersHandler = $/GFX/StickerProxy/DynamicStickersHandlerProxy
+    AdditionalMode = SDMode_Sticker + SDMode_StickerDynamic
+    UseAutoBatcher = false
+)
+
+export MapBuildingUnitLevelBuildViewDescriptor is template_UnitLevelBuildViewDescriptor
+(
+    MaxRange = $/GraphicOption/LevelBuild_Infinite
+    AdditionalMode = SDMode_Sticker + SDMode_StickerDynamic + SDMode_FXModel
+    UseAutoBatcher = true
+)
