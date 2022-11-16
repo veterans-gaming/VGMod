@@ -207,6 +207,212 @@ export Descriptor_Deck_FR_11e_Para_multi is TDeckDescriptor
     ]
 )
 
+export Descriptor_Deck_FR_11ee_Para_multi is TDeckDescriptor
+(
+    DeckName = 'WLWREMUQDM'
+    DeckDivision = ~/Descriptor_Deck_Division_FR_11ee_Para_multi
+    DeckPackList =
+    [
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VBL_PC_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 3
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Puma_PC_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLRA_supply_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 3
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Para_Legion_FR
+            Transport = ~/Descriptor_Unit_VLRA_trans_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Para_FR
+            Transport = ~/Descriptor_Unit_VLRA_trans_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Para_FR
+            Transport = ~/Descriptor_Unit_VLRA_trans_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Para_Sapeurs_Flam_FR
+            Transport = ~/Descriptor_Unit_VLRA_trans_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_ATteam_Milan_2_para_FR
+            Transport = ~/Descriptor_Unit_VLTT_P4_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Rifles_Aero_CMD_FR
+            Transport = ~/Descriptor_Unit_Super_Puma_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Rifles_Aero_FR
+            Transport = ~/Descriptor_Unit_Super_Puma_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Groupe_AT_para_FR
+            Transport = ~/Descriptor_Unit_VLRA_trans_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 0
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Reserviste_FR
+            Transport = ~/Descriptor_Unit_VLRA_trans_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Para_CMD_FR
+            Transport = ~/Descriptor_Unit_VLRA_trans_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Mortier_MORT61_120mm_para_FR
+            Transport = ~/Descriptor_Unit_VLRA_trans_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLRA_Mortier81_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Howz_M101_105mm_FR
+            Transport = ~/Descriptor_Unit_VLRA_trans_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_ERC_90_Sagaie_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_ERC_90_Sagaie_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLTT_P4_MILAN_para_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLRA_MILAN_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_AML_90_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VBL_MILAN_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 3
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_SAS_FR
+            Transport = ~/Descriptor_Unit_VLRA_HMG_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_20mm_reco_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLRA_20mm_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLRA_Mistral_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 2
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_MANPAD_Mistral_para_FR
+            Transport = ~/Descriptor_Unit_VLTT_P4_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_Mistral_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Puma_Pirate_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_HOT_2_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_HOT_2_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Jaguar_nplm_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Jaguar_SEAD2_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Jaguar_RKT_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Mirage_2000_C_FR
+        ),
+        TDeckPackDescription
+        (
+            ExperienceLevel = 1
+            DeckPack = ~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Mirage_F1_C_FR
+        ),
+    ]
+    DeckCombatGroupList =
+    [
+    ]
+)
+
 export Descriptor_Deck_UK_1st_Armoured_multi is TDeckDescriptor
 (
     DeckName = 'SPPIBGCIEO'

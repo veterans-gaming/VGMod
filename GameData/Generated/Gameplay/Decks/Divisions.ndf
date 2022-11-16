@@ -9,8 +9,8 @@ Descriptor_Deck_Division_FR_11e_Para_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR2'
-    DivisionNationalite = ENationalite/Allied
-    DivisionTags = ['DEFAULT', 'FR', 'Allied', 'infantryReg', 'DC_PWR2']
+    DivisionNationalite = ENationalite/Axis
+    DivisionTags = ['DEFAULT', 'FR', 'Axis', 'infantryReg', 'DC_PWR2']
     UncensoredHintGUID = GUID:{49f1d04a-4063-462a-aba5-10edea838f30}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''
@@ -85,6 +85,92 @@ Descriptor_Deck_Division_FR_11e_Para_multi is TDeckDivisionDescriptor
     TypeTexture       = "Texture_Division_Type_infantryReg"
     CountryId = "FR"
 )
+
+Descriptor_Deck_Division_FR_11ee_Para_multi is TDeckDivisionDescriptor
+(
+    DescriptorId = GUID:{d197baae-fd2c-46ac-a289-de0de182a79f}
+    CfgName = 'FR_11ee_Para_multi'
+    DivisionName = 'PPYRYDDJRK'
+    DivisionNickname = ''
+    DivisionDescription = ''
+    DivisionPowerClassification = 'DC_PWR2'
+    DivisionNationalite = ENationalite/Allied
+    DivisionTags = ['DEFAULT', 'FR', 'Allied', 'infantryReg', 'DC_PWR2']
+    UncensoredHintGUID = GUID:{49f1d04a-4063-462a-aba5-10edea838f30}
+    TypeHintTitleToken = ''
+    TypeHintBodyToken = ''
+    TypeHintExtendedToken = ''
+    DescriptionHintTitleToken = 'PPYRYDDJRK'
+    DescriptionHintBodyToken = ''
+    DescriptionHintExtendedToken = ''
+    AvailableForPlay = True
+    PackList = MAP
+    [
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_AML_60_FR, 3),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_AML_90_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_ATteam_Milan_1_para_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_ATteam_Milan_2_para_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_DCA_53T2_20mm_Para_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_ERC_90_Sagaie_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_20mm_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_20mm_reco_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_HOT_2_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_HOT_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_Mistral_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gazelle_reco_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Gendarmerie_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Groupe_AT_para_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_HMGteam_AANF1_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_HMGteam_AANF1_para_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_HMGteam_M2HB_para_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Howz_M101_105mm_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Jaguar_ATGM_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Jaguar_HE_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Jaguar_RKT_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Jaguar_SEAD2_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Jaguar_SEAD_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Jaguar_clu_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Jaguar_nplm_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_MANPAD_Mistral_para_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Mirage_2000_C_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Mirage_5_F_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Mirage_F1_CT_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Mirage_F1_C_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Mortier_MORT61_120mm_para_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Para_CMD_FR, 4),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Para_FR, 4),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Para_Legion_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Para_Sapeurs_CMD_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Para_Sapeurs_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Para_Sapeurs_Flam_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Puma_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Puma_PC_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Puma_Pirate_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Reserviste_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Rifles_Aero_CMD_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Rifles_Aero_FR, 3),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_SAS_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_Scout_para_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VBL_MILAN_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VBL_PC_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VBL_Reco_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLRA_20mm_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLRA_MILAN_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLRA_Mistral_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLRA_Mortier81_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLRA_supply_FR, 1),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLTT_P4_MILAN_para_FR, 2),
+        (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLTT_P4_PC_FR, 2),
+    ]
+    MaxActivationPoints = 55
+    CostMatrix = MatrixCostName_FR_11e_Para_multi
+    EmblemTexture     = "Texture_Division_Emblem_FR_11e_Para"
+    StrategicLabelColor     = "BlancEquipe"
+    PortraitTexture   = "Texture_Division_Portrait_default"
+    TypeTexture       = "Texture_Division_Type_infantryReg"
+    CountryId = "FR"
+)
+
 Descriptor_Deck_Division_FR_5e_Blindee_multi is TDeckDivisionDescriptor
 (
     DescriptorId = GUID:{3eea10f1-c482-46f2-a747-f49879749d82}
@@ -93,8 +179,8 @@ Descriptor_Deck_Division_FR_5e_Blindee_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR1'
-    DivisionNationalite = ENationalite/Allied
-    DivisionTags = ['DEFAULT', 'FR', 'Allied', 'armored', 'DC_PWR1']
+    DivisionNationalite = ENationalite/Axis
+    DivisionTags = ['DEFAULT', 'FR', 'Axis', 'armored', 'DC_PWR1']
     UncensoredHintGUID = GUID:{40b72f70-b2c4-416a-b4c6-49e068ce5d6c}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''
@@ -477,8 +563,8 @@ Descriptor_Deck_Division_RFA_2_PzGrenadier_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR2'
-    DivisionNationalite = ENationalite/Allied
-    DivisionTags = ['DEFAULT', 'RFA', 'Allied', 'infantryReg', 'DC_PWR2']
+    DivisionNationalite = ENationalite/Axis
+    DivisionTags = ['DEFAULT', 'RFA', 'Axis', 'infantryReg', 'DC_PWR2']
     UncensoredHintGUID = GUID:{250e247f-03cb-4ed2-b806-e6571e79df42}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''
@@ -576,8 +662,8 @@ Descriptor_Deck_Division_RFA_5_Panzer_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR1'
-    DivisionNationalite = ENationalite/Allied
-    DivisionTags = ['DEFAULT', 'RFA', 'Allied', 'armored', 'DC_PWR1']
+    DivisionNationalite = ENationalite/Axis
+    DivisionTags = ['DEFAULT', 'RFA', 'Axis', 'armored', 'DC_PWR1']
     UncensoredHintGUID = GUID:{e6a81e32-9f6f-44dc-b174-e2960db98693}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''
@@ -666,8 +752,8 @@ Descriptor_Deck_Division_RFA_TerrKdo_Sud_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR3'
-    DivisionNationalite = ENationalite/Allied
-    DivisionTags = ['DEFAULT', 'RFA', 'Allied', 'infantryReg', 'DC_PWR3']
+    DivisionNationalite = ENationalite/Axis
+    DivisionTags = ['DEFAULT', 'RFA', 'Axis', 'infantryReg', 'DC_PWR3']
     UncensoredHintGUID = GUID:{39f2e89a-3eca-489d-a3f3-38a6632ac042}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''
@@ -1050,8 +1136,8 @@ Descriptor_Deck_Division_UK_1st_Armoured_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR1'
-    DivisionNationalite = ENationalite/Allied
-    DivisionTags = ['DEFAULT', 'UK', 'Allied', 'armored', 'DC_PWR1']
+    DivisionNationalite = ENationalite/Axis
+    DivisionTags = ['DEFAULT', 'UK', 'Axis', 'armored', 'DC_PWR1']
     UncensoredHintGUID = GUID:{100bb3ae-0015-45de-8d7d-d4322ec01ea8}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''
@@ -1135,8 +1221,8 @@ Descriptor_Deck_Division_UK_2nd_Infantry_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR2'
-    DivisionNationalite = ENationalite/Allied
-    DivisionTags = ['DEFAULT', 'UK', 'Allied', 'infantryReg', 'DC_PWR2']
+    DivisionNationalite = ENationalite/Axis
+    DivisionTags = ['DEFAULT', 'UK', 'Axis', 'infantryReg', 'DC_PWR2']
     UncensoredHintGUID = GUID:{fafc62ba-1dd3-4d48-bc9b-1f391fbd6193}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''
@@ -1227,8 +1313,8 @@ Descriptor_Deck_Division_US_3rd_Arm_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR1'
-    DivisionNationalite = ENationalite/Allied
-    DivisionTags = ['DEFAULT', 'US', 'Allied', 'armored', 'DC_PWR1']
+    DivisionNationalite = ENationalite/Axis
+    DivisionTags = ['DEFAULT', 'US', 'Axis', 'armored', 'DC_PWR1']
     UncensoredHintGUID = GUID:{928dfcfc-1248-4059-9841-43ea75066a47}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''
@@ -1318,8 +1404,8 @@ Descriptor_Deck_Division_US_82nd_Airborne_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR2'
-    DivisionNationalite = ENationalite/Allied
-    DivisionTags = ['DEFAULT', 'US', 'Allied', 'infantryReg', 'DC_PWR2']
+    DivisionNationalite = ENationalite/Axis
+    DivisionTags = ['DEFAULT', 'US', 'Axis', 'infantryReg', 'DC_PWR2']
     UncensoredHintGUID = GUID:{4f78be24-e814-4626-8b2a-48b221de055a}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''
@@ -1406,8 +1492,8 @@ Descriptor_Deck_Division_US_8th_Inf_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR2'
-    DivisionNationalite = ENationalite/Allied
-    DivisionTags = ['DEFAULT', 'US', 'Allied', 'infantryReg', 'DC_PWR2']
+    DivisionNationalite = ENationalite/Axis
+    DivisionTags = ['DEFAULT', 'US', 'Axis', 'infantryReg', 'DC_PWR2']
     UncensoredHintGUID = GUID:{7fae1ab3-a0c1-4d30-bfba-3af1d2a79538}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''

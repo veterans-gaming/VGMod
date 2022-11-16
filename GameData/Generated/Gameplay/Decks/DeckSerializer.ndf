@@ -22,6 +22,7 @@ DeckSerializer is TDeckSerializer
         (Descriptor_Deck_Division_RFA_TerrKdo_Sud_multi, 28),
         (Descriptor_Deck_Division_UK_1st_Armoured_multi, 29),
         (Descriptor_Deck_Division_UK_2nd_Infantry_multi, 30),
+        (Descriptor_Deck_Division_FR_11ee_Para_multi, 31),
     ]
 
     PackIds = MAP

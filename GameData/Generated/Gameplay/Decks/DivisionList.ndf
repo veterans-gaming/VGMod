@@ -20,5 +20,6 @@ private DivisionList is TDeckDivisionList
         ~/Descriptor_Deck_Division_UK_2nd_Infantry_multi,
         ~/Descriptor_Deck_Division_FR_5e_Blindee_multi,
         ~/Descriptor_Deck_Division_FR_11e_Para_multi,
+        ~/Descriptor_Deck_Division_FR_11ee_Para_multi,
     ]
 )
