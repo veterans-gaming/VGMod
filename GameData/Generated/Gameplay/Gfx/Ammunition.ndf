@@ -56290,7 +56290,7 @@ Ammo_RocketInf_PzF_44 is TAmmunitionDescriptor
     WeaponCursorType                  = Weapon_Cursor_UnguidedMissile
     MinMaxCategory                    = MinMax_LAW
     Level                             = 3
-    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=14)
+    Arme                              = TDamageTypeRTTI(Family="ap_missile" Index=15)
     ProjectileType                    = EProjectileType/Obus
     FxWeaponType                      = ~/TFxWeaponType_RoquetteLAW
     FxPower                           = EFXPower/Moyen
