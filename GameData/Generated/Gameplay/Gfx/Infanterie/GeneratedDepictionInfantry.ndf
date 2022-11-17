@@ -111,7 +111,7 @@ Gfx_AeroRifles_US is TemplateInfantryDepictionSquad
 AllWeaponAlternatives_AeroRifles_US is [
   AlternativeWithId( SelectorId = ['MeshAlternative_1'] ModelFile = ModelFile_M16A2 ),
   AlternativeWithId( SelectorId = ['MeshAlternative_2'] ModelFile = ModelFile_M60 ),
-  AlternativeWithId( SelectorId = ['MeshAlternative_3'] ModelFile = ModelFile_M72A4 ),
+  AlternativeWithId( SelectorId = ['MeshAlternative_3'] ModelFile = ModelFile_AT_4 ),
 ]
 AllWeaponSubDepiction_AeroRifles_US is TemplateAllSubWeaponDepiction
 (
@@ -129,7 +129,7 @@ AllWeaponSubDepiction_AeroRifles_US is TemplateAllSubWeaponDepiction
     ),
     DepictionOperator_WeaponInstantFireInfantry
     (
-      FireEffectTag = ["FireEffect_RocketInf_M72_LAW_66mm"]
+      FireEffectTag = ["FireEffect_RocketInf_AT4_83mm"]
       WeaponShootDataPropertyName = "WeaponShootData_0_3"
     ),
   ]
