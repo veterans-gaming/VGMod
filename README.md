@@ -3,8 +3,6 @@
 This mod is intended to be used for coop
 
 
-Before hosting a game, you must go in to the armoury and create a blufor deck using the only blufor divsion available. It only needs a command vehicle and will never be used in game.
-
 Changes:
 
 - Increase supplies on all supply vehicles * 10
