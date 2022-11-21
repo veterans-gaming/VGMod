@@ -101,8 +101,8 @@ export ForetLegere is TGameplayTerrain
     SpeedModifierAllTerrainWheel = 0.5
     SpeedModifierBoats = 0
     SpeedModifierHalfTrack = 0.4
-    SpeedModifierInfantry = 0.8
-    SpeedModifierTrack = 0.6
+    SpeedModifierInfantry = 1.0
+    SpeedModifierTrack = 0.3
     SpeedModifierWheel = 0.3
     StealthBonus = 2.50
     //~~~~~~~~

@@ -9,8 +9,8 @@ Descriptor_Deck_Division_FR_11e_Para_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR2'
-    DivisionNationalite = ENationalite/Axis
-    DivisionTags = ['DEFAULT', 'FR', 'Axis', 'infantryReg', 'DC_PWR2']
+    DivisionNationalite = ENationalite/Allied
+    DivisionTags = ['DEFAULT', 'FR', 'Allied', 'infantryReg', 'DC_PWR2']
     UncensoredHintGUID = GUID:{49f1d04a-4063-462a-aba5-10edea838f30}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''
@@ -94,8 +94,8 @@ Descriptor_Deck_Division_FR_11ee_Para_multi is TDeckDivisionDescriptor
     DivisionNickname = ''
     DivisionDescription = ''
     DivisionPowerClassification = 'DC_PWR2'
-    DivisionNationalite = ENationalite/Allied
-    DivisionTags = ['DEFAULT', 'FR', 'Allied', 'infantryReg', 'DC_PWR2']
+    DivisionNationalite = ENationalite/Axis
+    DivisionTags = ['DEFAULT', 'FR', 'Axis', 'infantryReg', 'DC_PWR2']
     UncensoredHintGUID = GUID:{49f1d04a-4063-462a-aba5-10edea838f30}
     TypeHintTitleToken = ''
     TypeHintBodyToken = ''
@@ -1021,7 +1021,7 @@ Descriptor_Deck_Division_SOV_39_Gds_Rifle_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_T80BV_CMD_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_T80BV_SOV, 4),
         (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_T80B_CMD_SOV, 1),
-        (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_T80B_SOV, 1),
+        (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_T80B_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_UAZ_469_AGL_SOV, 3),
         (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_UAZ_469_SPG9_DDR, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_39_Gds_Rifle_multi_Ural_4320_SOV, 2),
@@ -1111,7 +1111,7 @@ Descriptor_Deck_Division_SOV_79_Gds_Tank_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_CMD_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80BV_SOV, 5),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80B_CMD_SOV, 1),
-        (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80B_SOV, 1),
+        (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80B_SOV, 2),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80UD_SOV, 3),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_T80U_SOV, 1),
         (~/Descriptor_Deck_Pack_TOE_SOV_79_Gds_Tank_multi_TOS1_Buratino_SOV, 2),
