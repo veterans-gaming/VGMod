@@ -118,7 +118,7 @@ Constantes is TTunableConstante
 
 //---------------------------- Constantes GameRules ---------------------------------------//
 
-    DefaultAIDifficultyForPlayerReplacement = IADifficulty/Normal
+    DefaultAIDifficultyForPlayerReplacement = IADifficulty/TresDifficile
 
     // List d'options effects appliqué a toutes les parties, quelque soit les options choisies. Exemple : DefaultEffectsList = [ ~/OptionsEffectsDescriptor_ShowAllGisement ]
     DefaultEffectsList = [  ]
@@ -178,7 +178,7 @@ Constantes is TTunableConstante
 //---------------------------- Constantes Lobby -------------------------------------------//
 
     // 0 is No Time Limit
-    TimeLimitTable = [20, 30, 40, 60, 0]
+    TimeLimitTable = [20, 30, 40, 60, 90, 0]
 
 //----------------------------- Constantes Missile --------------------------------------//
 
@@ -370,8 +370,8 @@ ModernWarfareConstantes is TModernWarfareTunableConstante
         (IADifficulty/Facile,           0.0),
         (IADifficulty/Normal,           0.0),
         (IADifficulty/Difficile,        0.0),
-        (IADifficulty/TresDifficile,    0.5),
-        (IADifficulty/PlusDifficile,    0.8),
+        (IADifficulty/TresDifficile,    0.0),
+        (IADifficulty/PlusDifficile,    0.0),
     ]
 
 //---------------------------- Constantes Mouvement ---------------------------------------//
@@ -532,6 +532,10 @@ WargameConstantes is TWargameTunableConstante
         1000,//1000 par défaut, 1800 (30mn) en limité
         2000,//2000 par défaut, 2100 (35mn) en limité
         4000,//4000 par défaut, 2400 (45mn) en limité
+        6000,//4000 par défaut, 2400 (45mn) en limité
+        8000,//4000 par défaut, 2400 (45mn) en limité
+        10000,//4000 par défaut, 2400 (45mn) en limité
+        20000,//4000 par défaut, 2400 (45mn) en limité
     ]
 
 //-------------------------- Constantes Economy -----------------------------------------//
@@ -596,7 +600,7 @@ WargameConstantes is TWargameTunableConstante
         (IADifficulty/TresFacile,    0.0),
         (IADifficulty/Facile,        0.0),
         (IADifficulty/Normal,        0.0),
-        (IADifficulty/Difficile,     0.0),
+        (IADifficulty/Difficile,     0.5),
         (IADifficulty/TresDifficile, 0.5),
         (IADifficulty/PlusDifficile, 1.0),
     ]
@@ -619,8 +623,8 @@ WargameConstantes is TWargameTunableConstante
         (IADifficulty/Facile,           -1),
         (IADifficulty/Normal,           0),
         (IADifficulty/Difficile,        0),
-        (IADifficulty/TresDifficile,    0),
-        (IADifficulty/PlusDifficile,    0),
+        (IADifficulty/TresDifficile,    1),
+        (IADifficulty/PlusDifficile,    2),
     ]
 
 //------------------------ Constantes IAStratWargame ------------------------------------//
