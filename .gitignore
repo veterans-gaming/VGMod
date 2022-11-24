@@ -2,3 +2,5 @@
 *.bat
 *.ndfbin
 *_backup
+*.ndfbin
+Gen/PC/NDF/
