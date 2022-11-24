@@ -298,7 +298,7 @@ Gfx_2S3_DDR_Autogen is TacticVehicleDepictionTemplate
     ]
 
     Actions = MAP[
-                ( [ "weapon_effet_tag1" ], Weapon_Howz_Canon_D22_Howitzer_152mm ),
+                ( [ "weapon_effet_tag1" ], Weapon_Howz_Canon_D22_Howitzer_152mm_late ),
                 ( [ "weapon_effet_tag2" ], Weapon_Howz_Canon_D22_Howitzer_152mm_late_SMOKE ),
                 ( [ "weapon_effet_tag3" ], Weapon_Canon_AP_D22_152mm ),
                 ( [ "weapon_effet_tag4" ], Weapon_MMG_PKT_7_62mm ),
@@ -3444,6 +3444,13 @@ DepictionOperator_BMP_1P_reco_SOV_Weapon4 is DepictionOperator_WeaponContinuousF
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_4"
     NbFX = 1
 )
+DepictionOperator_BMP_1P_reco_SOV_Weapon5 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
+    NbProj = 1
+)
 Gfx_BMP_1P_reco_SOV_Autogen is TacticVehicleDepictionTemplate
 (
     CoatingName = 'BMP_1P_reco_SOV'
@@ -3467,6 +3474,7 @@ Gfx_BMP_1P_reco_SOV_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_BMP_1P_reco_SOV_Weapon2,
         DepictionOperator_BMP_1P_reco_SOV_Weapon3,
         DepictionOperator_BMP_1P_reco_SOV_Weapon4,
+        DepictionOperator_BMP_1P_reco_SOV_Weapon5,
         DepictionOperator_Heat,
     ]
 
@@ -3475,6 +3483,7 @@ Gfx_BMP_1P_reco_SOV_Autogen is TacticVehicleDepictionTemplate
                 ( [ "weapon_effet_tag2" ], Weapon_Canon_HE_73_mm_2A28_Grom ),
                 ( [ "weapon_effet_tag3" ], Weapon_ATGM_9K111_Fagot ),
                 ( [ "weapon_effet_tag4" ], Weapon_MMG_PKT_7_62mm ),
+                ( [ "weapon_effet_tag5" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Tracked
@@ -14842,6 +14851,13 @@ DepictionOperator_Saxon_CMD_UK_Weapon1 is DepictionOperator_WeaponContinuousFire
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
     NbFX = 1
 )
+DepictionOperator_Saxon_CMD_UK_Weapon5 is DepictionOperator_WeaponInstantFire
+(
+    FireEffectTag = "weapon_effet_tag5"
+    Anchors = ["fx_tourelle5_tir_01", "fx_tourelle5_tir_02"]
+    WeaponShootDataPropertyName = ["WeaponShootData_0_5", ]
+    NbProj = 1
+)
 Gfx_Saxon_CMD_UK_Autogen is TacticVehicleDepictionTemplate
 (
     CoatingName = 'Saxon_CMD_UK'
@@ -14859,10 +14875,12 @@ Gfx_Saxon_CMD_UK_Autogen is TacticVehicleDepictionTemplate
         DepictionOperator_Turret_1_Aim,
         DepictionOperator_Turret_1_TurretRockingRecoil_LightMachineGun,
         DepictionOperator_Saxon_CMD_UK_Weapon1,
+        DepictionOperator_Saxon_CMD_UK_Weapon5,
     ]
 
     Actions = MAP[
                 ( [ "weapon_effet_tag1" ], Weapon_MMG_L37A2_7_62mm ),
+                ( [ "weapon_effet_tag5" ], Weapon_SMOKE_Vehicle_Grenadex8 ),
             ]
             + DepictionAction_Stress_And_Wrecked
             + DepictionAction_MovementFX_Wheeled

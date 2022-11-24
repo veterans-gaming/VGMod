@@ -11332,7 +11332,7 @@ export Descriptor_ShowRoomUnit_DCA_M167_Vulcan_20mm_US is TEntityDescriptor
 )
 export Descriptor_ShowRoomUnit_DCA_Rapier_FSA_UK is TEntityDescriptor
 (
-    DescriptorId        = GUID:{f7da8edf-662a-4a61-aaf5-9995953e0d99}
+    DescriptorId        = GUID:{29d4e617-abe1-49d0-a50d-573f29b59057}
     ClassNameForDebug   = "ShowRoomUnit_DCA_Rapier_FSA_UK"
     ModulesDescriptors = [
         // TypeUnit
@@ -25588,7 +25588,7 @@ export Descriptor_ShowRoomUnit_M1025_Humvee_AGL_US is TEntityDescriptor
 )
 export Descriptor_ShowRoomUnit_M1025_Humvee_AGL_nonPara_US is TEntityDescriptor
 (
-    DescriptorId        = GUID:{4d7a8876-5e04-4ef3-991e-2dbc4a0ae236}
+    DescriptorId        = GUID:{77a5dd47-3c78-42ee-8eea-feeac37da156}
     ClassNameForDebug   = "ShowRoomUnit_M1025_Humvee_AGL_nonPara_US"
     ModulesDescriptors = [
         // TypeUnit
@@ -57240,7 +57240,7 @@ export Descriptor_ShowRoomUnit_UH1D_RFA is TEntityDescriptor
 )
 export Descriptor_ShowRoomUnit_UH1D_Supply_NL is TEntityDescriptor
 (
-    DescriptorId        = GUID:{c0168156-1a8c-4bb8-b143-c3179508e01a}
+    DescriptorId        = GUID:{3f1c5dde-f4c5-4b6a-9d65-c04e3018c3ed}
     ClassNameForDebug   = "ShowRoomUnit_UH1D_Supply_NL"
     ModulesDescriptors = [
         // TypeUnit

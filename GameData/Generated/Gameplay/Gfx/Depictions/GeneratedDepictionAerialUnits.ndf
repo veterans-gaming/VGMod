@@ -13619,26 +13619,37 @@ Op_Su_25_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
     WeaponShootDataPropertyName = "WeaponShootData_0_1"
 )
-Op_Su_25_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+Op_Su_25_SOV_Weapon2 is DepictionOperator_WeaponContinuousFire
 (
-    Connoisseur = MissileCarriage_Su_25_SOV
-    FireEffectTag = "weapon_effet_tag2"
-    NbProj = 1
-    WeaponIndex = 2
-    WeaponShootDataPropertyName = 
+    Anchors = 
     [
-        "WeaponShootData_0_2",
+        "fx_tourelle1_tir_01",
     ]
+    FireEffectTag = "weapon_effet_tag2"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
+    WeaponShootDataPropertyName = "WeaponShootData_0_2"
 )
 Op_Su_25_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 (
     Connoisseur = MissileCarriage_Su_25_SOV
     FireEffectTag = "weapon_effet_tag3"
     NbProj = 1
-    WeaponIndex = 3
+    WeaponIndex = 2
     WeaponShootDataPropertyName = 
     [
         "WeaponShootData_0_3",
+    ]
+)
+Op_Su_25_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_25_SOV
+    FireEffectTag = "weapon_effet_tag4"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_4",
     ]
 )
 Gfx_Su_25_SOV_Autogen is TacticAerialDepictionTemplate
@@ -13654,6 +13665,7 @@ Gfx_Su_25_SOV_Autogen is TacticAerialDepictionTemplate
             Op_Su_25_SOV_Weapon1,
             Op_Su_25_SOV_Weapon2,
             Op_Su_25_SOV_Weapon3,
+            Op_Su_25_SOV_Weapon4,
             DepictionOperator_CriticalEffects,
             DepictionOperator_AirplaneParts,
             DepictionOperator_Airplane,
@@ -13664,8 +13676,9 @@ Gfx_Su_25_SOV_Autogen is TacticAerialDepictionTemplate
         ]
         Actions = MAP[
                     ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_Gsh_30_2_30mm_x2 ),
-                    ( [ "weapon_effet_tag2" ], Weapon_AGM_Kh25ML ),
-                    ( [ "weapon_effet_tag3" ], Weapon_AA_R60M_Vympel ),
+                    ( [ "weapon_effet_tag2" ], Weapon_GatlingAir_AP_Gsh_30_2_30mm_x2 ),
+                    ( [ "weapon_effet_tag3" ], Weapon_AGM_Kh25ML ),
+                    ( [ "weapon_effet_tag4" ], Weapon_AA_R60M_Vympel ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Avion
                 + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky
@@ -13689,26 +13702,37 @@ Op_Su_25_clu_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
     WeaponShootDataPropertyName = "WeaponShootData_0_1"
 )
-Op_Su_25_clu_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+Op_Su_25_clu_SOV_Weapon2 is DepictionOperator_WeaponContinuousFire
 (
-    Connoisseur = MissileCarriage_Su_25_clu_SOV
-    FireEffectTag = "weapon_effet_tag2"
-    NbProj = 1
-    WeaponIndex = 2
-    WeaponShootDataPropertyName = 
+    Anchors = 
     [
-        "WeaponShootData_0_2",
+        "fx_tourelle1_tir_01",
     ]
+    FireEffectTag = "weapon_effet_tag2"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
+    WeaponShootDataPropertyName = "WeaponShootData_0_2"
 )
 Op_Su_25_clu_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 (
     Connoisseur = MissileCarriage_Su_25_clu_SOV
     FireEffectTag = "weapon_effet_tag3"
     NbProj = 1
-    WeaponIndex = 3
+    WeaponIndex = 2
     WeaponShootDataPropertyName = 
     [
         "WeaponShootData_0_3",
+    ]
+)
+Op_Su_25_clu_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_25_clu_SOV
+    FireEffectTag = "weapon_effet_tag4"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_4",
     ]
 )
 Gfx_Su_25_clu_SOV_Autogen is TacticAerialDepictionTemplate
@@ -13724,6 +13748,7 @@ Gfx_Su_25_clu_SOV_Autogen is TacticAerialDepictionTemplate
             Op_Su_25_clu_SOV_Weapon1,
             Op_Su_25_clu_SOV_Weapon2,
             Op_Su_25_clu_SOV_Weapon3,
+            Op_Su_25_clu_SOV_Weapon4,
             DepictionOperator_CriticalEffects,
             DepictionOperator_AirplaneParts,
             DepictionOperator_Airplane,
@@ -13734,8 +13759,9 @@ Gfx_Su_25_clu_SOV_Autogen is TacticAerialDepictionTemplate
         ]
         Actions = MAP[
                     ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_Gsh_30_2_30mm_x2 ),
-                    ( [ "weapon_effet_tag2" ], Weapon_Bomb_CLU_RBK_250kg_x6 ),
-                    ( [ "weapon_effet_tag3" ], Weapon_AA_R60M_Vympel ),
+                    ( [ "weapon_effet_tag2" ], Weapon_GatlingAir_AP_Gsh_30_2_30mm_x2 ),
+                    ( [ "weapon_effet_tag3" ], Weapon_Bomb_CLU_RBK_250kg_x6 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_AA_R60M_Vympel ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Avion
                 + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky
@@ -13759,26 +13785,37 @@ Op_Su_25_he_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
     WeaponShootDataPropertyName = "WeaponShootData_0_1"
 )
-Op_Su_25_he_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+Op_Su_25_he_SOV_Weapon2 is DepictionOperator_WeaponContinuousFire
 (
-    Connoisseur = MissileCarriage_Su_25_he_SOV
-    FireEffectTag = "weapon_effet_tag2"
-    NbProj = 1
-    WeaponIndex = 2
-    WeaponShootDataPropertyName = 
+    Anchors = 
     [
-        "WeaponShootData_0_2",
+        "fx_tourelle1_tir_01",
     ]
+    FireEffectTag = "weapon_effet_tag2"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
+    WeaponShootDataPropertyName = "WeaponShootData_0_2"
 )
 Op_Su_25_he_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 (
     Connoisseur = MissileCarriage_Su_25_he_SOV
     FireEffectTag = "weapon_effet_tag3"
     NbProj = 1
-    WeaponIndex = 3
+    WeaponIndex = 2
     WeaponShootDataPropertyName = 
     [
         "WeaponShootData_0_3",
+    ]
+)
+Op_Su_25_he_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_25_he_SOV
+    FireEffectTag = "weapon_effet_tag4"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_4",
     ]
 )
 Gfx_Su_25_he_SOV_Autogen is TacticAerialDepictionTemplate
@@ -13794,6 +13831,7 @@ Gfx_Su_25_he_SOV_Autogen is TacticAerialDepictionTemplate
             Op_Su_25_he_SOV_Weapon1,
             Op_Su_25_he_SOV_Weapon2,
             Op_Su_25_he_SOV_Weapon3,
+            Op_Su_25_he_SOV_Weapon4,
             DepictionOperator_CriticalEffects,
             DepictionOperator_AirplaneParts,
             DepictionOperator_Airplane,
@@ -13804,8 +13842,9 @@ Gfx_Su_25_he_SOV_Autogen is TacticAerialDepictionTemplate
         ]
         Actions = MAP[
                     ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_Gsh_30_2_30mm_x2 ),
-                    ( [ "weapon_effet_tag2" ], Weapon_Bomb_FAB_500kg_x6 ),
-                    ( [ "weapon_effet_tag3" ], Weapon_AA_R60M_Vympel ),
+                    ( [ "weapon_effet_tag2" ], Weapon_GatlingAir_AP_Gsh_30_2_30mm_x2 ),
+                    ( [ "weapon_effet_tag3" ], Weapon_Bomb_FAB_500kg_x6 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_AA_R60M_Vympel ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Avion
                 + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky
@@ -13829,26 +13868,37 @@ Op_Su_25_nplm_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
     WeaponShootDataPropertyName = "WeaponShootData_0_1"
 )
-Op_Su_25_nplm_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+Op_Su_25_nplm_SOV_Weapon2 is DepictionOperator_WeaponContinuousFire
 (
-    Connoisseur = MissileCarriage_Su_25_nplm_SOV
-    FireEffectTag = "weapon_effet_tag2"
-    NbProj = 1
-    WeaponIndex = 2
-    WeaponShootDataPropertyName = 
+    Anchors = 
     [
-        "WeaponShootData_0_2",
+        "fx_tourelle1_tir_01",
     ]
+    FireEffectTag = "weapon_effet_tag2"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
+    WeaponShootDataPropertyName = "WeaponShootData_0_2"
 )
 Op_Su_25_nplm_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 (
     Connoisseur = MissileCarriage_Su_25_nplm_SOV
     FireEffectTag = "weapon_effet_tag3"
     NbProj = 1
-    WeaponIndex = 3
+    WeaponIndex = 2
     WeaponShootDataPropertyName = 
     [
         "WeaponShootData_0_3",
+    ]
+)
+Op_Su_25_nplm_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_25_nplm_SOV
+    FireEffectTag = "weapon_effet_tag4"
+    NbProj = 1
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_4",
     ]
 )
 Gfx_Su_25_nplm_SOV_Autogen is TacticAerialDepictionTemplate
@@ -13864,6 +13914,7 @@ Gfx_Su_25_nplm_SOV_Autogen is TacticAerialDepictionTemplate
             Op_Su_25_nplm_SOV_Weapon1,
             Op_Su_25_nplm_SOV_Weapon2,
             Op_Su_25_nplm_SOV_Weapon3,
+            Op_Su_25_nplm_SOV_Weapon4,
             DepictionOperator_CriticalEffects,
             DepictionOperator_AirplaneParts,
             DepictionOperator_Airplane,
@@ -13874,8 +13925,9 @@ Gfx_Su_25_nplm_SOV_Autogen is TacticAerialDepictionTemplate
         ]
         Actions = MAP[
                     ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_Gsh_30_2_30mm_x2 ),
-                    ( [ "weapon_effet_tag2" ], Weapon_Bomb_ZB500_500kg_Napalm_x4 ),
-                    ( [ "weapon_effet_tag3" ], Weapon_AA_R60M_Vympel ),
+                    ( [ "weapon_effet_tag2" ], Weapon_GatlingAir_AP_Gsh_30_2_30mm_x2 ),
+                    ( [ "weapon_effet_tag3" ], Weapon_Bomb_ZB500_500kg_Napalm_x4 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_AA_R60M_Vympel ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Avion
                 + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky
@@ -13899,28 +13951,39 @@ Op_Su_25_rkt_SOV_Weapon1 is DepictionOperator_WeaponContinuousFire
     WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_1"
     WeaponShootDataPropertyName = "WeaponShootData_0_1"
 )
-Op_Su_25_rkt_SOV_Weapon2 is DepictionOperator_WeaponMissileCarriageFire
+Op_Su_25_rkt_SOV_Weapon2 is DepictionOperator_WeaponContinuousFire
 (
-    Connoisseur = MissileCarriage_Su_25_rkt_SOV
-    FireEffectTag = "weapon_effet_tag2"
-    NbProj = 2
-    WeaponIndex = 2
-    WeaponShootDataPropertyName = 
+    Anchors = 
     [
-        "WeaponShootData_0_2",
-        "WeaponShootData_1_2",
+        "fx_tourelle1_tir_01",
     ]
+    FireEffectTag = "weapon_effet_tag2"
+    NbFX = 1
+    WeaponActiveAndCanShootPropertyName = "WeaponActiveAndCanShoot_2"
+    WeaponShootDataPropertyName = "WeaponShootData_0_2"
 )
 Op_Su_25_rkt_SOV_Weapon3 is DepictionOperator_WeaponMissileCarriageFire
 (
     Connoisseur = MissileCarriage_Su_25_rkt_SOV
     FireEffectTag = "weapon_effet_tag3"
     NbProj = 2
-    WeaponIndex = 3
+    WeaponIndex = 2
     WeaponShootDataPropertyName = 
     [
         "WeaponShootData_0_3",
         "WeaponShootData_1_3",
+    ]
+)
+Op_Su_25_rkt_SOV_Weapon4 is DepictionOperator_WeaponMissileCarriageFire
+(
+    Connoisseur = MissileCarriage_Su_25_rkt_SOV
+    FireEffectTag = "weapon_effet_tag4"
+    NbProj = 2
+    WeaponIndex = 3
+    WeaponShootDataPropertyName = 
+    [
+        "WeaponShootData_0_4",
+        "WeaponShootData_1_4",
     ]
 )
 Gfx_Su_25_rkt_SOV_Autogen is TacticAerialDepictionTemplate
@@ -13936,6 +13999,7 @@ Gfx_Su_25_rkt_SOV_Autogen is TacticAerialDepictionTemplate
             Op_Su_25_rkt_SOV_Weapon1,
             Op_Su_25_rkt_SOV_Weapon2,
             Op_Su_25_rkt_SOV_Weapon3,
+            Op_Su_25_rkt_SOV_Weapon4,
             DepictionOperator_CriticalEffects,
             DepictionOperator_AirplaneParts,
             DepictionOperator_Airplane,
@@ -13946,8 +14010,9 @@ Gfx_Su_25_rkt_SOV_Autogen is TacticAerialDepictionTemplate
         ]
         Actions = MAP[
                     ( [ "weapon_effet_tag1" ], Weapon_GatlingAir_Gsh_30_2_30mm_x2 ),
-                    ( [ "weapon_effet_tag2" ], Weapon_RocketAir_B8_80mm_x40 ),
+                    ( [ "weapon_effet_tag2" ], Weapon_GatlingAir_AP_Gsh_30_2_30mm_x2 ),
                     ( [ "weapon_effet_tag3" ], Weapon_RocketAir_B8_80mm_x40 ),
+                    ( [ "weapon_effet_tag4" ], Weapon_RocketAir_B8_80mm_x40 ),
                 ]
                 + DepictionAction_Stress_And_Wrecked_Avion
                 + DepictionAction_MovementFX_DoubleReactorAirplane_Smoky

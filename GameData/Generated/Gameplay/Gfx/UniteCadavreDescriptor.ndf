@@ -11587,7 +11587,7 @@ Descriptor_UnitCadavre_DCA_M167_Vulcan_20mm_US is TEntityDescriptor
 )
 Descriptor_UnitCadavre_DCA_Rapier_FSA_UK is TEntityDescriptor
 (
-    DescriptorId       = GUID:{512415d8-4575-4bf0-9ae7-9dc7217089d0}
+    DescriptorId       = GUID:{15df9dfc-761c-484d-87dc-f2c63e50a919}
     ClassNameForDebug  = 'Unit_CadavreDCA_Rapier_FSA_UK'
     ModulesDescriptors = [
         // TypeUnit
@@ -24369,7 +24369,7 @@ Descriptor_UnitCadavre_M1025_Humvee_AGL_US is TEntityDescriptor
 )
 Descriptor_UnitCadavre_M1025_Humvee_AGL_nonPara_US is TEntityDescriptor
 (
-    DescriptorId       = GUID:{9244efe0-2d96-4dbe-a55d-f249311802f3}
+    DescriptorId       = GUID:{4bf3b933-67b4-4507-b8dd-b92a62f7f4b3}
     ClassNameForDebug  = 'Unit_CadavreM1025_Humvee_AGL_nonPara_US'
     ModulesDescriptors = [
         // TypeUnit
@@ -55786,7 +55786,7 @@ Descriptor_UnitCadavre_UH1D_RFA is TEntityDescriptor
 )
 Descriptor_UnitCadavre_UH1D_Supply_NL is TEntityDescriptor
 (
-    DescriptorId       = GUID:{5e3b5f2a-4aaa-4f23-86b8-e811a9964ec2}
+    DescriptorId       = GUID:{6e0a066c-8849-4443-8834-309972cd3fb3}
     ClassNameForDebug  = 'Unit_CadavreUH1D_Supply_NL'
     ModulesDescriptors = [
         // TypeUnit

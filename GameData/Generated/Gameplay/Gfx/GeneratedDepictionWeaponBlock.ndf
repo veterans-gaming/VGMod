@@ -65,14 +65,6 @@ Weapon_MMG_PKT_7_62mm is TCompositeHappening
         SFXWeapon_MMG_PKT_7_62mm,
     ]
 )
-Weapon_Howz_Canon_D22_Howitzer_152mm is TCompositeHappening
-(
-    SubHappenings = 
-    [
-        FXWeapon_Howz_Canon_D22_Howitzer_152mm,
-        SFXWeapon_Howz_Canon_D22_Howitzer_152mm,
-    ]
-)
 Weapon_Howz_Canon_2A44_Howitzer_203mm_late is TCompositeHappening
 (
     SubHappenings = 
@@ -3130,6 +3122,14 @@ Weapon_GatlingAir_Gsh_30_2_30mm_x2 is TCompositeHappening
     [
         FXWeapon_GatlingAir_Gsh_30_2_30mm_x2,
         SFXWeapon_GatlingAir_Gsh_30_2_30mm_x2,
+    ]
+)
+Weapon_GatlingAir_AP_Gsh_30_2_30mm_x2 is TCompositeHappening
+(
+    SubHappenings = 
+    [
+        FXWeapon_GatlingAir_AP_Gsh_30_2_30mm_x2,
+        SFXWeapon_GatlingAir_AP_Gsh_30_2_30mm_x2,
     ]
 )
 Weapon_AGM_Kh25ML is TCompositeHappening

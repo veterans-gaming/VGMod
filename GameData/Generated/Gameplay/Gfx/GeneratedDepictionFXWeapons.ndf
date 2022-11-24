@@ -4204,16 +4204,16 @@ FXWeapon_Howz_Canon_2A60_Howitzer_120mm_SMOKE is FiringAndProjectile
 FXWeapon_Howz_Canon_D20_Howitzer_152mm is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_6( Action = $/GFX/GameFx/fx_tir_obus_155mm_douille ),
-        FXProjectile_7( Action = $/GFX/GameFx/fx_traine_obus_155mm ),
+        FXFiring_16( Action = $/GFX/GameFx/fx_tir_obus_155mm_douille ),
+        FXProjectile_20( Action = $/GFX/GameFx/fx_traine_obus_155mm ),
     ]
 )
 
 FXWeapon_Howz_Canon_D20_Howitzer_152mm_SMOKE is FiringAndProjectile
 (
     Happenings = [
-        FXFiring_6( Action = $/GFX/GameFx/fx_tir_obus_155mm_douille ),
-        FXProjectile_7( Action = $/GFX/GameFx/fx_traine_obus_155mm ),
+        FXFiring_16( Action = $/GFX/GameFx/fx_tir_obus_155mm_douille ),
+        FXProjectile_20( Action = $/GFX/GameFx/fx_traine_obus_155mm ),
     ]
 )
 
@@ -6461,6 +6461,14 @@ FXWeapon_RocketAvion_S13_122mm is FiringAndProjectile
     Happenings = [
         FXFiring_18( Action = $/GFX/GameFx/fx_tir_roquette_S13_air ),
         FXProjectile_23( Action = $/GFX/GameFx/fx_traine_roquette_S13 ),
+    ]
+)
+
+FXWeapon_RocketInf_AGI_3X40_40mm is FiringAndProjectile
+(
+    Happenings = [
+        FXFiring_5( Action = $/GFX/GameFx/fx_tir_LAW ),
+        FXProjectile_6( Action = $/GFX/GameFx/fx_traine_LAW ),
     ]
 )
 

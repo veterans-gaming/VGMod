@@ -108,11 +108,11 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 0.0 // Howz Canon 2A18 Howitzer 122mm
                )
                AimTime = TMinMaxValue (
-                       Min = 26.0 // Howz Canon 2A18 Howitzer 122mm
+                       Min = 16.0 // Howz Canon 2A18 Howitzer 122mm
                        Max = 28.0 // RocketArt M21OF 122mm x12
                )
                ReloadTime = TMinMaxValue (
-                       Min = 36.0 // Howz Canon FH70 Howitzer 155mm
+                       Min = 30.0 // Howz Canon 2A18 Howitzer 122mm
                        Max = 240.0 // RocketArt thermobaric 220mm x30
                )
                TurretSpeed = TMinMaxValue (
@@ -192,7 +192,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 70.0 // Canon HE 142mm AVRE
                )
                AccuracyMovement = TMinMaxValue (
-                       Min = 0.0 // Canon AP 2A60 120mm
+                       Min = 0.0 // Canon AP 2A18 122mm
                        Max = 65.0 // Canon AP 120mm L44 late 2A4
                )
                RateOfFire = TMinMaxValue (
@@ -701,23 +701,23 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                )
                RateOfFire = TMinMaxValue (
                        Min = 10.0 // RocketInf Carl Gustav
-                       Max = 20.0 // RocketInf M72 LAW 66mm
+                       Max = 29.62962962962963 // RocketInf M202 Flash 66mm
                )
                Penetration = TMinMaxValue (
                        Min = 13 // RocketInf M72 LAW 66mm
                        Max = 21 // RocketInf PzF 3
                )
                TimeBetweenTwoShots = TMinMaxValue (
-                       Min = 1.0 // RocketInf Carl Gustav
+                       Min = 0.7 // RocketInf M202 Flash 66mm
                        Max = 1.0 // RocketInf Carl Gustav
                )
                NbShotsBySalvo = TMinMaxValue (
                        Min = 1.0 // RocketInf Carl Gustav
-                       Max = 1.0 // RocketInf Carl Gustav
+                       Max = 4.0 // RocketInf M202 Flash 66mm
                )
                SupplyCost = TMinMaxValue (
                        Min = 10.0 // RocketInf M72 LAW 66mm
-                       Max = 15.0 // RocketInf Carl Gustav
+                       Max = 40.0 // RocketInf M202 Flash 66mm
               )
          )
        ),
@@ -1196,7 +1196,7 @@ MinMaxValuesInterfaceHelper is TWeaponsMinMaxValuesInterfaceHelper
                        Max = 100.0 // Bomb GBU 24 x2
                )
                RateOfFire = TMinMaxValue (
-                       Min = 54.54545454545454 // Bomb KAB 500Kr x2
+                       Min = 109.09090909090908 // Bomb CBU Mk20 Rockeye II 250kg x2
                        Max = 342.85714285714283 // Bomb Mk82 250kg x12
                )
                TimeBetweenTwoShots = TMinMaxValue (

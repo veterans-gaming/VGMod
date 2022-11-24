@@ -1528,6 +1528,15 @@ export ModelFile_Engineers_DDR_LOW is DDR_MotSchutzen_LOW
 export ModelFile_Engineers_Flam_POL is DDR_MotSchutzen_1
 export ModelFile_Engineers_Flam_POL_LOW is DDR_MotSchutzen_LOW
 
+//Engineers_AGI_DDR
+export ModelFile_Engineers_AGI_DDR is DDR_MotSchutzen_1
+export ModelFile_Engineers_AGI_DDR_02 is DDR_MotSchutzen_2
+export ModelFile_Engineers_AGI_DDR_03 is DDR_MotSchutzen_NCO
+export ModelFile_Engineers_AGI_DDR_04 is DDR_MotSchutzen_Officer
+export ModelFile_Engineers_AGI_DDR_05 is DDR_MotSchutzen_Sniper
+export ModelFile_Engineers_AGI_DDR_06 is DDR_MotSchutzen_spe
+export ModelFile_Engineers_AGI_DDR_LOW is DDR_MotSchutzen_LOW
+
 //Engineers_Flam_DDR
 export ModelFile_Engineers_Flam_DDR is DDR_MotSchutzen_1
 export ModelFile_Engineers_Flam_DDR_02 is DDR_MotSchutzen_2

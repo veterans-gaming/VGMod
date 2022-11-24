@@ -110,7 +110,7 @@ OnBuildingLost is TUIFeedbackDispatchedMessageDescriptor
 OnDamageReceived is TUIFeedbackDispatchedMessageDescriptor
 (
     UnitAcknow = TAcknowUnitAction_DamageReceived
-    TimeBeforeRepeat = 10
+    TimeBeforeRepeat = 20
     IsActiveForPlayer = true
 )
 
@@ -512,7 +512,7 @@ OnShootOnPositionOrder is TUIFeedbackDispatchedMessageDescriptor
 OnUnitPanicking is TUIFeedbackDispatchedMessageDescriptor
 (
     UnitAcknow = TAcknowUnitAction_Panicking
-    TimeBeforeRepeat = 10
+    TimeBeforeRepeat = 20
     IsActiveForPlayer = true
 )
 

@@ -436,7 +436,7 @@ export Descriptor_Deck_UK_1st_Armoured_multi is TDeckDescriptor
         ),
         TDeckPackDescription
         (
-            ExperienceLevel = 2
+            ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_UK_1st_Armoured_multi_CH47D_Chinook_supply_UK
         ),
         TDeckPackDescription
@@ -828,12 +828,12 @@ export Descriptor_Deck_UK_2nd_Infantry_multi is TDeckDescriptor
         ),
         TDeckPackDescription
         (
-            ExperienceLevel = 2
+            ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_UK_2nd_Infantry_multi_Bedford_MJ_4t_UK
         ),
         TDeckPackDescription
         (
-            ExperienceLevel = 2
+            ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_UK_2nd_Infantry_multi_Bedford_MJ_4t_UK
         ),
         TDeckPackDescription
@@ -1007,7 +1007,7 @@ export Descriptor_Deck_UK_2nd_Infantry_multi is TDeckDescriptor
         ),
         TDeckPackDescription
         (
-            ExperienceLevel = 2
+            ExperienceLevel = 1
             DeckPack = ~/Descriptor_Deck_Pack_TOE_UK_2nd_Infantry_multi_CH47D_Chinook_supply_UK
         ),
         TDeckPackDescription

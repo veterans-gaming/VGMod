@@ -22923,7 +22923,7 @@ export Descriptor_Missile_SAM_RAPIER is TEntityDescriptor
 )
 export Descriptor_Missile_SAM_RAPIER_FSA_x4 is TEntityDescriptor
 (
-    DescriptorId       = GUID:{2a78af67-49aa-47b5-b0bb-112bba814c4a}
+    DescriptorId       = GUID:{359960ef-7bf8-483a-97d9-24289dc9f808}
     ClassNameForDebug  = 'Missile_SAM_RAPIER_FSA_x4'
     ModulesDescriptors = [
         // TypeUnit
