@@ -1417,7 +1417,7 @@ private DivisionRules is TDeckDivisionRules
                         UnitDescriptor = ~/Descriptor_Unit_Fallschirmjager_DDR
                         AvailableWithoutTransport = False
                         AvailableTransportList = [~/Descriptor_Unit_W50_LA_A_DDR]
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 6
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 0.0, 1.0]
                     ),
                     TDeckUniteRule
@@ -1441,7 +1441,7 @@ private DivisionRules is TDeckDivisionRules
                         UnitDescriptor = ~/Descriptor_Unit_Fallschirmjager_HMG_DDR
                         AvailableWithoutTransport = False
                         AvailableTransportList = [~/Descriptor_Unit_W50_LA_A_DDR]
-                        NumberOfUnitInPack = 3
+                        NumberOfUnitInPack = 4
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 0.0, 1.0]
                     ),
                     TDeckUniteRule
@@ -1449,7 +1449,7 @@ private DivisionRules is TDeckDivisionRules
                         UnitDescriptor = ~/Descriptor_Unit_Fallschirmjager_Metys_DDR
                         AvailableWithoutTransport = False
                         AvailableTransportList = [~/Descriptor_Unit_W50_LA_A_DDR]
-                        NumberOfUnitInPack = 4
+                        NumberOfUnitInPack = 6
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 0.0, 1.0]
                     ),
                     TDeckUniteRule
@@ -3011,7 +3011,7 @@ private DivisionRules is TDeckDivisionRules
                         UnitDescriptor = ~/Descriptor_Unit_Fallschirm_RFA
                         AvailableWithoutTransport = False
                         AvailableTransportList = [~/Descriptor_Unit_Unimog_trans_RFA]
-                        NumberOfUnitInPack = 6
+                        NumberOfUnitInPack = 7
                         NumberOfUnitInPackXPMultiplier = [0.0, 0.0, 1.0, 0.66]
                     ),
                     TDeckUniteRule
