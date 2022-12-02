@@ -21,3 +21,5 @@ Changes:
 - Removed AI starting points buff for Very Hard and Hardest AI
 - Added Hard AI points per tick buff
 - Added additional 'points needed to win' options
+- 2nd Panzergren infantry increases
+- Increased MLRS firerate
