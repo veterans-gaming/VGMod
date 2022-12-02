@@ -632,7 +632,7 @@ Descriptor_Deck_Division_RFA_2_PzGrenadier_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_RFA_2_PzGrenadier_multi_Panzergrenadier_APC_RFA, 3),
         (~/Descriptor_Deck_Pack_TOE_RFA_2_PzGrenadier_multi_Panzergrenadier_CMD_RFA, 4),
         (~/Descriptor_Deck_Pack_TOE_RFA_2_PzGrenadier_multi_Panzergrenadier_IFV_RFA, 6),
-        (~/Descriptor_Deck_Pack_TOE_RFA_2_PzGrenadier_multi_PzGrenadier_RFA, 1),
+        (~/Descriptor_Deck_Pack_TOE_RFA_2_PzGrenadier_multi_PzGrenadier_RFA, 2),
         (~/Descriptor_Deck_Pack_TOE_RFA_2_PzGrenadier_multi_Scout_BEL, 3),
         (~/Descriptor_Deck_Pack_TOE_RFA_2_PzGrenadier_multi_Scout_RFA, 3),
         (~/Descriptor_Deck_Pack_TOE_RFA_2_PzGrenadier_multi_Security_RFA, 1),
