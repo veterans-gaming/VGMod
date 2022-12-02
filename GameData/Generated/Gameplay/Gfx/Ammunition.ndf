@@ -43386,7 +43386,7 @@ Ammo_Mortier_60mm_longue_portee is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 3.0
-    PorteeMaximale                    = ((15,544) * Metre)
+    PorteeMaximale                    = ((15544) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
@@ -64103,7 +64103,7 @@ Ammo_AGM_AGM45_Shrike is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 2.0
-    PorteeMaximale                    = ((15,544) * Metre)
+    PorteeMaximale                    = ((15544) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
@@ -64593,7 +64593,7 @@ Ammo_AGM_ARMAT is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 2.0
-    PorteeMaximale                    = ((15,544) * Metre)
+    PorteeMaximale                    = ((15544) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
@@ -64885,7 +64885,7 @@ Ammo_AGM_AS37_Martel is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 2.0
-    PorteeMaximale                    = ((15,544) * Metre)
+    PorteeMaximale                    = ((15544) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
@@ -65577,7 +65577,7 @@ Ammo_AGM_Kh23M is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 1.0
-    PorteeMaximale                    = ((15,544) * Metre)
+    PorteeMaximale                    = ((15544) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
