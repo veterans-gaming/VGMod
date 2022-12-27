@@ -543,12 +543,12 @@ WargameConstantes is TWargameTunableConstante
     BaseIncome = MAP
     [
         (CombatRule/NotSpecified,   0),
-        (CombatRule/CaptureTheFlag, 260),
+        (CombatRule/CaptureTheFlag, 200),
         (CombatRule/Destruction,    4),
     ]
     DefaultIncomeMultiplierIndex    = 3 // normal
     //                   none   very_low   low      normal    high     very_high
-    IncomeMultiplier = [   0,    0.5,    0.75,       1,      1.25,       1.5 ]
+    IncomeMultiplier = [   0.25,    0.5,    0.75,       1,      1.25,       1.5 ]
     TimeBeforeEarningCommandPoints = MAP
     [
         (CombatRule/NotSpecified,   60.0),
@@ -574,7 +574,7 @@ WargameConstantes is TWargameTunableConstante
 
 //--------------------------- Constantes Destruction ---------------------------------------//
 
-    DefaultIncomeMultiplierIndexInDestructionMode = 3 // medium
+    DefaultIncomeMultiplierIndexInDestructionMode = 10 // medium
 
     // Tokens de localisation pour le niveau d'income
     //                                            none         very_low     low         medium
@@ -582,7 +582,7 @@ WargameConstantes is TWargameTunableConstante
 
     // Multiplicateur de points de commandement gagnes par joueur par période de TimeBeforeEarningCommandPoints en mode conquete
     //                                   none  very_low    low   medium
-    IncomeMultiplierInDestructionMode = [  0,      0.5,   0.75,      1]
+    IncomeMultiplierInDestructionMode = [  0.2,      0.4,   0.6,      0.75]
 
 //--------------------------- Constantes Défense ---------------------------------------//
 
@@ -611,7 +611,7 @@ WargameConstantes is TWargameTunableConstante
         (IADifficulty/TresFacile,       0),
         (IADifficulty/Facile,           0),
         (IADifficulty/Normal,           0),
-        (IADifficulty/Difficile,        0),
+        (IADifficulty/Difficile,        0.25),
         (IADifficulty/TresDifficile,    0.5),
         (IADifficulty/PlusDifficile,    1.0),
     ]
@@ -622,7 +622,7 @@ WargameConstantes is TWargameTunableConstante
         (IADifficulty/TresFacile,       -2),
         (IADifficulty/Facile,           -1),
         (IADifficulty/Normal,           0),
-        (IADifficulty/Difficile,        0),
+        (IADifficulty/Difficile,        1),
         (IADifficulty/TresDifficile,    1),
         (IADifficulty/PlusDifficile,    2),
     ]
