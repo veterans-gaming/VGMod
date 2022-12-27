@@ -2396,7 +2396,7 @@ Ammo_AutoCanon_HE_30mm_24A2 is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((20) * Metre)
     PhysicalDamages                   = 0.495
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 33.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = False
@@ -2500,7 +2500,7 @@ Ammo_AutoCanon_HE_30mm_24A2_BMP2 is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((20) * Metre)
     PhysicalDamages                   = 0.495
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 33.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -2603,7 +2603,7 @@ Ammo_AutoCanon_HE_30mm_2A72_BMP3 is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((20) * Metre)
     PhysicalDamages                   = 0.495
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 33.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = False
@@ -2707,7 +2707,7 @@ Ammo_AutoCanon_HE_30mm_Bitube_Gsh30k is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((20) * Metre)
     PhysicalDamages                   = 0.495
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 33.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = False
@@ -2811,7 +2811,7 @@ Ammo_AutoCanon_HE_30mm_L21A1_RARDEN is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((20) * Metre)
     PhysicalDamages                   = 0.495
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 33.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -2915,7 +2915,7 @@ Ammo_AutoCanon_HE_30mm_M230 is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((20) * Metre)
     PhysicalDamages                   = 0.495
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 33.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = False
@@ -24659,7 +24659,7 @@ Ammo_DCA_2_canon_FK20_20mm is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((15) * Metre)
     PhysicalDamages                   = 0.6
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 30.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -24762,7 +24762,7 @@ Ammo_DCA_2_canon_ZU23_2_23mm is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((15) * Metre)
     PhysicalDamages                   = 0.6
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 30.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -24865,7 +24865,7 @@ Ammo_DCA_2_canon_ZU23_2_23mm_TOWED is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((15) * Metre)
     PhysicalDamages                   = 0.6
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 30.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -25589,7 +25589,7 @@ Ammo_DCA_2_canons_VDAA_20mm is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((15) * Metre)
     PhysicalDamages                   = 0.6
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 30.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -38766,7 +38766,7 @@ Ammo_Lance_grenade_AGS17 is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((18) * Metre)
     PhysicalDamages                   = 0.345
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 25.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = False
@@ -58888,7 +58888,7 @@ Ammo_SAW_L86A1_5_56mm is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((0) * Metre)
     PhysicalDamages                   = 0.1
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 30.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = False
@@ -58991,7 +58991,7 @@ Ammo_SAW_M249_5_56mm is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((0) * Metre)
     PhysicalDamages                   = 0.1
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 30.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = False
@@ -59094,7 +59094,7 @@ Ammo_SAW_Minimi_5_56mm is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((0) * Metre)
     PhysicalDamages                   = 0.1
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 30.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = False
@@ -59300,7 +59300,7 @@ Ammo_SAW_RPK_74_5_56mm is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((0) * Metre)
     PhysicalDamages                   = 0.1
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 30.0
     RayonPinned                       = ((400) * Metre)
     AllowSuppressDamageWhenNoImpact                = False
@@ -64114,7 +64114,7 @@ Ammo_AGM_AGM45_Shrike is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -64408,7 +64408,7 @@ Ammo_AGM_AGM88_HARM is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -64506,7 +64506,7 @@ Ammo_AGM_ALARM is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -64604,7 +64604,7 @@ Ammo_AGM_ARMAT is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -64896,7 +64896,7 @@ Ammo_AGM_AS37_Martel is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -65782,7 +65782,7 @@ Ammo_AGM_Kh25MPU is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -65880,7 +65880,7 @@ Ammo_AGM_Kh28_X28 is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -66172,7 +66172,7 @@ Ammo_AGM_Kh31P is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((60) * Metre)
+    RadiusSplashSuppressDamages       = ((30) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
