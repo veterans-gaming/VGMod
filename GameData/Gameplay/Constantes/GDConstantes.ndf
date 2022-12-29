@@ -525,7 +525,7 @@ WargameConstantes is TWargameTunableConstante
 
     // Multiplicateur de points de commandement gagnes par joueur par période de TimeBeforeEarningCommandPoints en mode conquete
     //                                   none  very_low    low   medium   high    very_high
-    MoneyWinPerAllianceInConquestMode = [  0,      0.5,   0.75,      1,    1.5,       2]
+    MoneyWinPerAllianceInConquestMode = [  0.25,      0.5,   0.75,      1,    1.5,       2]
 
     ConquestPossibleScores =
     [
@@ -574,7 +574,7 @@ WargameConstantes is TWargameTunableConstante
 
 //--------------------------- Constantes Destruction ---------------------------------------//
 
-    DefaultIncomeMultiplierIndexInDestructionMode = 10 // medium
+    DefaultIncomeMultiplierIndexInDestructionMode = 3 // medium
 
     // Tokens de localisation pour le niveau d'income
     //                                            none         very_low     low         medium
@@ -582,7 +582,7 @@ WargameConstantes is TWargameTunableConstante
 
     // Multiplicateur de points de commandement gagnes par joueur par période de TimeBeforeEarningCommandPoints en mode conquete
     //                                   none  very_low    low   medium
-    IncomeMultiplierInDestructionMode = [  0.2,      0.4,   0.6,      0.75]
+    IncomeMultiplierInDestructionMode = [  0.25,      0.5,   0.75,      1]
 
 //--------------------------- Constantes Défense ---------------------------------------//
 
