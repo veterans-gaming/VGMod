@@ -3,6 +3,7 @@
 *.ndfbin
 *_backup
 *.ndfbin
+*.cat
 Gen/PC/NDF/
 Gen/Resources/Catalog.cat
 Gen/PC/NDF/Patchable/GFX/AllUnit_SourceHashes.ndfbin
@@ -21,3 +22,4 @@ Gen/PC/NDF/Patchable/GFX/Weapon_SourceHashes.ndfbin
 Gen/PC/NDF/Patchable/GFX/Weapon.ndfbin
 Gen/PC/NDF/Patchable/UI/Components_SourceHashes.ndfbin
 Gen/PC/NDF/Patchable/UI/Components.ndfbin
+Gen/Resources/Catalog.cat
