@@ -43386,7 +43386,7 @@ Ammo_Mortier_60mm_longue_portee is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 3.0
-    PorteeMaximale                    = ((15544) * Metre)
+    PorteeMaximale                    = ((11957) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
@@ -52717,7 +52717,7 @@ Ammo_RocketArt_9M27F_HE_220mm is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 160.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -52821,7 +52821,7 @@ Ammo_RocketArt_9M27K_CLU_HE_220mm is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 160.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -52925,7 +52925,7 @@ Ammo_RocketArt_9M27S_NPLM_220mm is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 160.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -53137,7 +53137,7 @@ Ammo_RocketArt_BM27_220mm is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 120.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -53241,7 +53241,7 @@ Ammo_RocketArt_LARS_110mm is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 80.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -53346,7 +53346,7 @@ Ammo_RocketArt_LARS_110mm_cluster is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 160.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -53451,7 +53451,7 @@ Ammo_RocketArt_M21OF_122mm is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 80.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -53557,7 +53557,7 @@ Ammo_RocketArt_M21OF_122mm_cluster is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 200.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -53662,7 +53662,7 @@ Ammo_RocketArt_M21OF_122mm_napalm is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 80.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -53768,7 +53768,7 @@ Ammo_RocketArt_M21OF_122mm_x12 is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 48.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -53873,7 +53873,7 @@ Ammo_RocketArt_M26_227mm is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 80.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -53979,7 +53979,7 @@ Ammo_RocketArt_M26_227mm_Cluster is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 120.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -54190,7 +54190,7 @@ Ammo_RocketArt_thermobaric_220mm_x30 is TAmmunitionDescriptor
     )
 
     MaxSuccessiveHitCount             = 1
-    TempsDeVisee                      = 46.0
+    TempsDeVisee                      = 28.0
     TempsEntreDeuxSalves              = 240.0
     TempsEntreDeuxSalves_Min           = -1.0
     TempsEntreDeuxSalves_Max           = -1.0
@@ -64114,7 +64114,7 @@ Ammo_AGM_AGM45_Shrike is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((30) * Metre)
+    RadiusSplashSuppressDamages       = ((60) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -64397,7 +64397,7 @@ Ammo_AGM_AGM88_HARM is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 2.0
-    PorteeMaximale                    = ((19,406) * Metre)
+    PorteeMaximale                    = ((19406) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
@@ -64408,7 +64408,7 @@ Ammo_AGM_AGM88_HARM is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((30) * Metre)
+    RadiusSplashSuppressDamages       = ((60) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -64495,7 +64495,7 @@ Ammo_AGM_ALARM is TAmmunitionDescriptor
     TempsEntreDeuxTirs_Min             = -1.0
     TempsEntreDeuxTirs_Max             = -1.0
     TempsEntreDeuxFx                  = 2.0
-    PorteeMaximale                    = ((19,406) * Metre)
+    PorteeMaximale                    = ((19406) * Metre)
     PorteeMinimaleTBA                 = ((0) * Metre)
     PorteeMaximaleTBA                 = ((0) * Metre)
     PorteeMinimaleHA                  = ((0) * Metre)
@@ -64506,7 +64506,7 @@ Ammo_AGM_ALARM is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((30) * Metre)
+    RadiusSplashSuppressDamages       = ((60) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -64604,7 +64604,7 @@ Ammo_AGM_ARMAT is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((30) * Metre)
+    RadiusSplashSuppressDamages       = ((60) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -64896,7 +64896,7 @@ Ammo_AGM_AS37_Martel is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((30) * Metre)
+    RadiusSplashSuppressDamages       = ((60) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -65782,7 +65782,7 @@ Ammo_AGM_Kh25MPU is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((30) * Metre)
+    RadiusSplashSuppressDamages       = ((60) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -65880,7 +65880,7 @@ Ammo_AGM_Kh28_X28 is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((30) * Metre)
+    RadiusSplashSuppressDamages       = ((60) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
@@ -66172,7 +66172,7 @@ Ammo_AGM_Kh31P is TAmmunitionDescriptor
     CorrectedShotAimtimeMultiplier    = 1.0
     RadiusSplashPhysicalDamages       = ((5) * Metre)
     PhysicalDamages                   = 1.0
-    RadiusSplashSuppressDamages       = ((30) * Metre)
+    RadiusSplashSuppressDamages       = ((60) * Metre)
     SuppressDamages                   = 400.0
     RayonPinned                       = ((1000) * Metre)
     AllowSuppressDamageWhenNoImpact                = True
