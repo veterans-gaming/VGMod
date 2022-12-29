@@ -162,7 +162,7 @@ Descriptor_Deck_Division_FR_11ee_Para_multi is TDeckDivisionDescriptor
         (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLTT_P4_MILAN_para_FR, 2),
         (~/Descriptor_Deck_Pack_TOE_FR_11e_Para_multi_VLTT_P4_PC_FR, 2),
     ]
-    MaxActivationPoints = 55
+    MaxActivationPoints = 50
     CostMatrix = MatrixCostName_FR_11e_Para_multi
     EmblemTexture     = "Texture_Division_Emblem_FR_11e_Para"
     StrategicLabelColor     = "BlancEquipe"
