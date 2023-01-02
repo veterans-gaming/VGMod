@@ -611,8 +611,8 @@ WargameConstantes is TWargameTunableConstante
         (IADifficulty/TresFacile,       0),
         (IADifficulty/Facile,           0),
         (IADifficulty/Normal,           0),
-        (IADifficulty/Difficile,        0.25),
-        (IADifficulty/TresDifficile,    0.5),
+        (IADifficulty/Difficile,        0),
+        (IADifficulty/TresDifficile,    0.2),
         (IADifficulty/PlusDifficile,    1.0),
     ]
 
